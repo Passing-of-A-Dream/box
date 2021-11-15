@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "首次注册",
+          "pathName": "pages/loginIn/loginIn",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

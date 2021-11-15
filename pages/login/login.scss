@@ -1,0 +1,67 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  .bgImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -999;
+    height: 100%;
+    width: 100%;
+    image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .Mantle {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    background: rgba($color: #000000, $alpha: 0.8);
+  }
+  .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .Logo {
+      width: 222px;
+      height: 128px;
+      image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .word {
+      color: #fff;
+      margin-top: 92px;
+      text {
+        font-family: GenJyuuGothic-Bold;
+        font-size: 17px;
+        font-weight: bold;
+      }
+    }
+    .button {
+      margin-top: 90px;
+      width: 314px;
+      height: 50px;
+      button {
+        height: 100%;
+        width: 100%;
+        line-height: 200%;
+        background: #0FC1B5;
+        color: #fff;
+        font-family: GenJyuuGothic-Bold;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 50px;
+      }
+    }
+  }
+}

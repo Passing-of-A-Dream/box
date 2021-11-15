@@ -1,0 +1,77 @@
+.login {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.login .bgImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999;
+  height: 100%;
+  width: 100%;
+}
+
+.login .bgImg image {
+  height: 100%;
+  width: 100%;
+}
+
+.login .Mantle {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.login .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .content .Logo {
+  width: 222px;
+  height: 128px;
+}
+
+.login .content .Logo image {
+  height: 100%;
+  width: 100%;
+}
+
+.login .content .word {
+  color: #fff;
+  margin-top: 92px;
+}
+
+.login .content .word text {
+  font-family: GenJyuuGothic-Bold;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.login .content .button {
+  margin-top: 90px;
+  width: 314px;
+  height: 50px;
+}
+
+.login .content .button button {
+  height: 100%;
+  width: 100%;
+  line-height: 200%;
+  background: #0FC1B5;
+  color: #fff;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+}

@@ -1,0 +1,4 @@
+<view class="head" style="padding-top: {{navHeight + 6}}px;">
+  <image src="/static/img/Back.svg" />
+  {{title}}
+</view>

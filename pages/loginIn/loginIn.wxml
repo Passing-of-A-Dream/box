@@ -1,0 +1,49 @@
+<!-- 导航栏 -->
+<head title="注册"></head>
+<!-- 首次注册页面 -->
+<view class="loginIn" style="padding-top: {{navHeight}}px;">
+<view class="head">
+  <view class="avatar">
+    <view class="image">
+      <image src="{{userInfo.avatarUrl}}" />
+    </view>
+    <view class="icon">
+      <image src="/static/img/upload.svg" />
+    </view>
+  </view>
+</view>
+<view class="sex">
+  <view class="title">我是</view>
+  <view class="select">
+    <radio-group bindchange="radioChange">
+      <label class="weui-radio-label" wx:for="{{sexItem}}" wx:key="value">
+        <view class="weui-radio-name">
+          <image src="{{item.img}}" />
+          {{item.name}}
+        </view>
+        <view class="weui-radio">
+          <radio color="#0FC1B5" value="{{item.value}}"/>
+        </view>
+      </label>
+    </radio-group>
+  </view>
+  <text>确定后不可修改，请慎重选择</text>
+</view>
+<view class="age">
+  <view class="title">年龄</view>
+  <view class="select">
+    <picker class="weui-picker" mode="date" value="{{date}}" fields="month" bindchange="bindDateChange">
+      <view class="picker">{{date}}</view>
+    </picker>
+  </view>
+</view>
+<view class="name">
+  <view class="title">昵称</view>
+  <view class="input">
+    <input value="{{userInfo.nickName}}" />
+  </view>
+</view>
+<view class="button">
+  <button>确定</button>
+</view>
+</view>

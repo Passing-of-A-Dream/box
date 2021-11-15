@@ -1,0 +1,151 @@
+.loginIn {
+  background: #252837;
+  width: calc(100% - 64px);
+  padding: 0 32px;
+}
+
+.title {
+  font-family: GenJyuuGothic-Bold;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.head {
+  width: 100%;
+  height: 96px;
+  margin-top: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head .avatar {
+  height: 100%;
+  width: 96px;
+  position: relative;
+}
+
+.head .avatar .image {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.head .avatar .image image {
+  height: 100%;
+  width: 100%;
+}
+
+.head .avatar .icon {
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.head .avatar .icon image {
+  height: 100%;
+  width: 100%;
+}
+
+.sex {
+  margin-top: 32px;
+  color: #fff;
+}
+
+.sex .select .weui-radio-label {
+  margin-top: 14px;
+  padding: 0 14px;
+  width: 283px;
+  height: 50px;
+  background: #303342;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sex .select .weui-radio-label .weui-radio-name {
+  display: flex;
+  font-family: SFUIDisplay-Medium;
+  font-size: 15px;
+}
+
+.sex .select .weui-radio-label .weui-radio-name image {
+  margin-right: 25.38px;
+  width: 20.61px;
+  height: 20.62px;
+}
+
+.sex text {
+  display: block;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.age {
+  margin-top: 21px;
+}
+
+.age .select {
+  margin-top: 14px;
+  padding: 0 14px;
+  width: 283px;
+  height: 50px;
+  background: #303342;
+  border-radius: 5px;
+}
+
+.age .select .weui-picker {
+  width: 100%;
+  height: 100%;
+}
+
+.age .select .weui-picker .picker {
+  width: 100%;
+  padding: 14.5px 0;
+  font-family: SFUIDisplay-Medium;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.name {
+  margin-top: 21px;
+}
+
+.name .input {
+  margin-top: 14px;
+  padding: 0 14px;
+  width: 283px;
+  height: 50px;
+  background: #303342;
+  border-radius: 5px;
+  line-height: 50px;
+  font-family: SFUIDisplay-Medium;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button {
+  margin-top: 40px;
+  width: 314px;
+  height: 50px;
+}
+
+.button button {
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 200%;
+  background: #0FC1B5;
+  color: #fff;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+}
