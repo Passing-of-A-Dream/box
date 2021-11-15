@@ -8,11 +8,11 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationStyle": "custom",
+    "backgroundColor": "#252837"
   },
   "usingComponents": {
     "head": "/components/header/header"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

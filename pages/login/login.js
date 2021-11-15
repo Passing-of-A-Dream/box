@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    goTo: 1,  // 判断是否首次登录
+    rawData: {},  // 用户资料
   },
 
   /**
@@ -15,9 +16,36 @@ Page({
 
   },
   GoIndex() {
-    wx.navigateTo({
-      url: '../loginIn/loginIn',
+    wx.getUserProfile({
+      desc: '用于登录小程序',
+      success: (res) => {
+        console.log(res.rawData);
+        this.setData({
+          rawData: res.rawData
+        })
+      }
+    })
+    wx.login({
+      timeout: 10000,
+      success: (result) => {
+        wx.request({
+          url: '',
+          data: {
+            code: res.code,
+            userInfo: rawData
+          }
+        })
+      },
     });
+    // if (this.data.goTo === 0) {
+    //   wx.navigateTo({
+    //     url: '../loginIn/loginIn',
+    //   });
+    // } else {
+    //   wx.navigateTo({
+    //     url: '../index/index'
+    //   })
+    // }
   },
 
   /**

@@ -1,7 +1,7 @@
 <!-- 导航栏 -->
-<head title="注册"></head>
+<head title="注册" color="#252837"></head>
 <!-- 首次注册页面 -->
-<view class="loginIn" style="padding-top: {{navHeight}}px;">
+<view class="loginIn" style="padding-top: {{navHeight}}px;height:100%">
 <view class="head">
   <view class="avatar">
     <view class="image">
@@ -40,7 +40,7 @@
 <view class="name">
   <view class="title">昵称</view>
   <view class="input">
-    <input value="{{userInfo.nickName}}" />
+    <input bindblur="bindblur" value="{{userInfo.nickName}}" />
   </view>
 </view>
 <view class="button">

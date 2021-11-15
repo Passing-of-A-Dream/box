@@ -1,7 +1,11 @@
 .loginIn {
   background: #252837;
   width: calc(100% - 64px);
-  padding: 0 32px;
+  padding: 0 32px 40rpx 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 // 公共样式
 .title {
@@ -118,22 +122,25 @@
     font-family: SFUIDisplay-Medium;
     font-size: 15px;
     color: rgba($color: #fff, $alpha: 0.3);
+    input {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 // 按钮
 .button{
   margin-top: 40px;
-  width: 314px;
-  height: 50px;
+  padding-bottom: 30px;
   button{
-    margin: 0;
-    width: 100%;
+    width: 314px;
     height: 50px;
-    line-height: 200%;
+    margin: 0;
+    line-height: 50px;
     background: #0FC1B5;
     color: #fff;
     font-family: GenJyuuGothic-Bold;
-    font-size: 15px;
+    font-size: 30rpx;
     font-weight: bold;
     border-radius: 50px;
   }

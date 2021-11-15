@@ -67,7 +67,7 @@
 .login .content .button button {
   height: 100%;
   width: 100%;
-  line-height: 200%;
+  line-height: 50px;
   background: #0FC1B5;
   color: #fff;
   font-family: GenJyuuGothic-Bold;

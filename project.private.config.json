@@ -17,6 +17,12 @@
           "pathName": "pages/loginIn/loginIn",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

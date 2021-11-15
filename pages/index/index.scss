@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100%;
+    height: 100%;
+    image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .mantle {
+    height: 100%;
+    width: 100%;
+    background:rgba($color: #222533, $alpha: 0.7);
+  }
+}

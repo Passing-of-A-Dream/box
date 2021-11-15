@@ -13,6 +13,7 @@ Page({
       { value: 'gril', name: '女', img: '/static/img/sex-gril.svg' }
     ],
     date: '选择',  // 年龄
+    inputValue: "",  // 昵称
   },
 
   /**
@@ -50,6 +51,12 @@ Page({
     console.log(e.detail.value)
     this.setData({
       date: e.detail.value
+    })
+  },
+  // 昵称输入
+  bindblur(e) {
+    this.setData({
+      inputValue: e.detail.value
     })
   },
 

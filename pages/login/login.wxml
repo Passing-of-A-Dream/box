@@ -1,6 +1,6 @@
 <view class="login">
   <view class="bgImg">
-    <image src="/static/img/backgroundImg.png" />
+    <image mode="center" src="/static/img/backgroundImg.png" />
   </view>
   <view class="Mantle"></view>
   <view class="content">
