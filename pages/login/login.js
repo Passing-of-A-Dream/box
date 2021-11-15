@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goTo: 1,  // 判断是否首次登录
-    rawData: {},  // 用户资料
+    goTo: 1, // 判断是否首次登录
+    userInfo: {}, // 用户资料
   },
 
   /**
@@ -16,36 +16,66 @@ Page({
 
   },
   GoIndex() {
+    // 获取用户信息
     wx.getUserProfile({
-      desc: '用于登录小程序',
+      desc: '展示用户信息',
       success: (res) => {
-        console.log(res.rawData);
+        console.log(res);
         this.setData({
-          rawData: res.rawData
+          userInfo: res.userInfo
+        })
+        wx.request({
+          url: 'url',
+          method: "POST",
+          data: {
+            userInfo: this.data.userInfo
+          }
         })
       }
     })
+    // 用户登录
     wx.login({
       timeout: 10000,
-      success: (result) => {
+      success: (res) => {
+        console.log(res.code);
         wx.request({
-          url: '',
+          url: 'http://localhost',
+          method: 'POST',
           data: {
             code: res.code,
-            userInfo: rawData
           }
         })
       },
     });
-    // if (this.data.goTo === 0) {
-    //   wx.navigateTo({
-    //     url: '../loginIn/loginIn',
-    //   });
-    // } else {
-    //   wx.navigateTo({
-    //     url: '../index/index'
-    //   })
-    // }
+
+    let that = this;
+    // 获取用户位置信息
+    wx.getLocation({
+      success(res) {
+        console.log(res);
+        that.setData({
+          latitude: res.latitude,
+          longitude: res.longitude
+        })
+        wx.setStorageSync('latitude', res.latitude)
+        wx.setStorageSync('longitude', res.longitude)
+      }
+    })
+    // 判断用户是否首次注册并跳转
+    if (this.data.goTo === 0) {
+      wx.navigateTo({
+        url: '../loginIn/loginIn',
+      });
+    } else {
+      wx.navigateTo({
+        url: '../index/index'
+      })
+    }
+  },
+  getPhoneNumber(e) {
+    console.log(e.detail.errMsg)
+    console.log(e.detail.iv)
+    console.log(e.detail.encryptedData)
   },
 
   /**

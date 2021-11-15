@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   .background {
     position: fixed;
     top: 0;
@@ -8,14 +8,45 @@
     z-index: -999;
     width: 100%;
     height: 100%;
-    image {
+    .map {
       height: 100%;
       width: 100%;
     }
   }
   .mantle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -990;
     height: 100%;
     width: 100%;
-    background:rgba($color: #222533, $alpha: 0.7);
+    background: rgba($color: #222533, $alpha: 0.7);
+  }
+  .index {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .top {
+      height: 40px;
+      width: 69px;
+      position: absolute;
+      top: 0;
+      left: 40rpx;
+      z-index: 99;
+      image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .content {
+      margin-top: 210rpx;
+      border: 1px solid chartreuse;
+      width: 716rpx;
+      height: 716rpx;
+      
+    }
   }
 }
