@@ -7,16 +7,16 @@ App({
       timeout: 10000,
       success: (res) => {
         // console.log(res.code);
-        wx.request({
-          url: 'http://localhost',
-          method: 'POST',
-          data: {
-            code: res.code,
-          }
-        }).then(res=>{
-          // 根据返回信息判断用户是否首次登录
-          console.log(res);
-        })
+        // wx.request({
+        //   url: '',
+        //   method: 'POST',
+        //   data: {
+        //     code: res.code,
+        //   }
+        // }).then(res=>{
+        //   // 根据返回信息判断用户是否首次登录
+        //   console.log(res);
+        // })
       },
     });
   },

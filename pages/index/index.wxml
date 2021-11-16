@@ -1,4 +1,6 @@
-<!--index.wxml-->
+<van-popup show="{{ show }}" bind:close="onClose">
+  <view class="van-popup">到台上歌唱一曲</view>
+</van-popup>
 <view class="container" style="padding-top: {{navHeight}}px;height:calc(100vh - {{navHeight}}px);">
   <!-- 背景图 -->
   <view class="background">
@@ -8,7 +10,9 @@
         <block wx:for="{{customCalloutMarkerIds}}" wx:key="*this">
           <cover-view class="customCallout" marker-id="{{item}}">
             <cover-view class="content">
-              {{item}}-盒子危机
+              <cover-view>不二酒吧(紫荆店)</cover-view>
+              <cover-view>热度：1003</cover-view>
+              <cover-image src="/static/img/Icon@Go.svg" />
             </cover-view>
           </cover-view>
         </block>

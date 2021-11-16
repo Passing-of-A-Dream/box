@@ -21,10 +21,36 @@
   width: 278rpx;
   height: 72rpx;
   border-radius: 40rpx;
-  background: #0FC1B5;
+  background: #0fc1b5;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.container .background .map .customCallout .content {
+  width: calc(100% - 80rpx);
+  height: calc(100% - 14rpx);
+  color: #fff;
+  font-family: AlibabaPuHuiTiM;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .background .map .customCallout .content cover-view:nth-child(1) {
+  font-size: 24rpx;
+}
+
+.container .background .map .customCallout .content cover-view:nth-child(2) {
+  font-size: 20rpx;
+}
+
+.container .background .map .customCallout .content cover-image {
+  position: absolute;
+  right: 20rpx;
+  top: 26rpx;
+  width: 12rpx;
+  height: 20rpx;
 }
 
 .container .mantle {
@@ -152,4 +178,18 @@
 .container .index .bottom .button .position button image {
   width: 32.82rpx;
   height: 32.84rpx;
+}
+
+.van-popup {
+  width: 686rpx;
+  height: 812rpx;
+  border-radius: 10rpx;
+  background: #8d9dea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: AlibabaPuHuiTiB;
+  font-size: 48rpx;
+  font-weight: bold;
 }
