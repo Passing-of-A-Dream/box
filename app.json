@@ -2,8 +2,42 @@
   "pages": [
     "pages/login/login",
     "pages/index/index",
-    "pages/loginIn/loginIn"
+    "pages/loginIn/loginIn",
+    "pages/task/task",
+    "pages/chat/chat",
+    "pages/me/me"
   ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/img/index.png",
+        "selectedIconPath": "static/img/index_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/task/task",
+        "iconPath": "static/img/task.png",
+        "selectedIconPath": "static/img/task_select.png",
+        "text": "任务"
+      }, {
+        "pagePath": "pages/chat/chat",
+        "iconPath": "static/img/chat.png",
+        "selectedIconPath": "static/img/chat_select.png",
+        "text": "聊天"
+      }, {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/img/me.png",
+        "selectedIconPath": "static/img/me_select.png",
+        "text": "我的"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

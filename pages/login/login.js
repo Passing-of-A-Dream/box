@@ -20,39 +20,29 @@ Page({
     wx.getUserProfile({
       desc: '展示用户信息',
       success: (res) => {
-        console.log(res);
+        // console.log(res);
         this.setData({
           userInfo: res.userInfo
         })
-        wx.request({
-          url: 'url',
-          method: "POST",
-          data: {
-            userInfo: this.data.userInfo
-          }
-        })
+        wx.setStorageSync('userInfo', res.userInfo)
+        // 判断用户是否首次注册并跳转
+        if (this.data.goTo === 0) {
+          wx.navigateTo({
+            url: '../loginIn/loginIn',
+          });
+        } else if (this.data.goTo === 1){
+          wx.switchTab({
+            url: '../index/index'
+          })
+        }
       }
     })
-    // 用户登录
-    wx.login({
-      timeout: 10000,
-      success: (res) => {
-        console.log(res.code);
-        wx.request({
-          url: 'http://localhost',
-          method: 'POST',
-          data: {
-            code: res.code,
-          }
-        })
-      },
-    });
 
     let that = this;
     // 获取用户位置信息
     wx.getLocation({
       success(res) {
-        console.log(res);
+        // console.log(res);
         that.setData({
           latitude: res.latitude,
           longitude: res.longitude
@@ -61,21 +51,11 @@ Page({
         wx.setStorageSync('longitude', res.longitude)
       }
     })
-    // 判断用户是否首次注册并跳转
-    if (this.data.goTo === 0) {
-      wx.navigateTo({
-        url: '../loginIn/loginIn',
-      });
-    } else {
-      wx.navigateTo({
-        url: '../index/index'
-      })
-    }
   },
   getPhoneNumber(e) {
-    console.log(e.detail.errMsg)
-    console.log(e.detail.iv)
-    console.log(e.detail.encryptedData)
+    // console.log(e.detail.errMsg)
+    // console.log(e.detail.iv)
+    // console.log(e.detail.encryptedData)
   },
 
   /**

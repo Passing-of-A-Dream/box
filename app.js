@@ -2,22 +2,23 @@
 App({
   onLaunch() {
     this.globalData.navHeight = wx.getSystemInfoSync().statusBarHeight
-
-    // 登录
+    // 用户登录
     wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+      timeout: 10000,
+      success: (res) => {
+        // console.log(res.code);
         wx.request({
-          url: '',
+          url: 'http://localhost',
+          method: 'POST',
           data: {
-            code: res.code
-          },
-          success: (result)=>{
-            
-          },
-        });
-      }
-    })
+            code: res.code,
+          }
+        }).then(res=>{
+          // 根据返回信息判断用户是否首次登录
+          console.log(res);
+        })
+      },
+    });
   },
   globalData: {
     navHeight: 0,

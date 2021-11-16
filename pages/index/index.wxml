@@ -1,21 +1,34 @@
 <!--index.wxml-->
-<view class="container" style="padding-top: {{navHeight}}px;">
+<view class="container" style="padding-top: {{navHeight}}px;height:calc(100vh - {{navHeight}}px);">
   <!-- 背景图 -->
   <view class="background">
     <map class="map" latitude="{{latitude}}" longitude="{{longitude}}"></map>
   </view>
   <!-- 蒙层 -->
-  <!-- <view class="mantle"></view> -->
+  <view class="mantle"></view>
   <!-- 主要内容 -->
   <view class="index">
     <view class="top">
       <image src="/static/img/Logo.svg" />
     </view>
     <view class="content">
-      <view class="oval_1"></view>
-      <view class="oval_2"></view>
-      <view class="oval_3"></view>
+      <view class="oval_1">
+        <view class="oval_2">
+          <view class="oval_3">
+            <image src="{{avatarUrl}}" />
+          </view>
+        </view>
+      </view>
     </view>
-    <view class="bottom">匹配按钮</view>
+    <view class="bottom">
+      <view class="button">
+        <view class="matching bgcolor">
+          <button>匹配</button>
+        </view>
+        <view class="position bgcolor">
+          <button><image src="/static/img/matching.svg"></image></button>
+        </view>
+      </view>
+    </view>
   </view>
 </view>

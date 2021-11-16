@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   width: 100%;
 }
@@ -23,7 +24,7 @@
   z-index: -990;
   height: 100%;
   width: 100%;
-  background: rgba(34, 37, 51, 0.7);
+  background: rgba(34, 37, 51, 0.3);
 }
 
 .container .index {
@@ -50,8 +51,72 @@
 }
 
 .container .index .content {
-  margin-top: 210rpx;
-  border: 1px solid chartreuse;
+  width: 100%;
+  height: calc(100% - 260rpx);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .index .content .oval_1 {
   width: 716rpx;
   height: 716rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(15, 193, 181, 0.28);
+}
+
+.container .index .content .oval_1 .oval_2 {
+  width: 432rpx;
+  height: 432rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(15, 193, 181, 0.13);
+}
+
+.container .index .content .oval_1 .oval_2 .oval_3 {
+  width: 212rpx;
+  height: 212rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(15, 193, 181, 0.14);
+}
+
+.container .index .content .oval_1 .oval_2 .oval_3 image {
+  width: 61.72rpx;
+  height: 61.72rpx;
+  border-radius: 50%;
+}
+
+.container .index .bottom {
+  position: absolute;
+  bottom: calc(83px + constant(safe-area-inset-bottom));
+  /*兼容 IOS<11.2*/
+  bottom: calc(83px + env(safe-area-inset-bottom));
+  /*兼容 IOS>11.2*/
+  width: 100%;
+}
+
+.container .index .bottom .button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+}
+
+.container .index .bottom .button .bgcolor button {
+  color: #fff;
+  background: #0fc1b5;
+}
+
+.container .index .bottom .button .position image {
+  width: 32.82rpx;
+  height: 32.84rpx;
 }

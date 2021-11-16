@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  // height: 100vh;
+  // 背景
   .background {
     position: fixed;
     top: 0;
@@ -13,6 +13,7 @@
       width: 100%;
     }
   }
+  // 蒙层
   .mantle {
     position: fixed;
     top: 0;
@@ -20,8 +21,9 @@
     z-index: -990;
     height: 100%;
     width: 100%;
-    background: rgba($color: #222533, $alpha: 0.7);
+    background: rgba($color: #222533, $alpha: 0.3);
   }
+  // 页面主要内容
   .index {
     height: 100%;
     width: 100%;
@@ -41,12 +43,71 @@
         width: 100%;
       }
     }
+    // 页面中间用户头像、圆环部分
     .content {
-      margin-top: 210rpx;
-      border: 1px solid chartreuse;
-      width: 716rpx;
-      height: 716rpx;
-      
+      // margin-top: 210rpx;
+      width: 100%;
+      height: calc(100% - 260rpx);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .oval_1 {
+        width: 716rpx;
+        height: 716rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgba($color: #0fc1b5, $alpha: 0.28);
+        .oval_2 {
+          width: 432rpx;
+          height: 432rpx;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background: rgba($color: #0fc1b5, $alpha: 0.13);
+          .oval_3 {
+            width: 212rpx;
+            height: 212rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: rgba($color: #0fc1b5, $alpha: 0.14);
+            image {
+              width: 61.72rpx;
+              height: 61.72rpx;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    // 按钮部分
+    .bottom {
+      position: absolute;
+      bottom: calc(83px + constant(safe-area-inset-bottom)); /*兼容 IOS<11.2*/
+      bottom: calc(83px + env(safe-area-inset-bottom)); /*兼容 IOS>11.2*/
+      width: 100%;
+      .button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        // 按钮背景颜色
+        .bgcolor button {
+          color: #fff;
+          background: #0fc1b5;
+        }
+        .position {
+          image {
+            width: 32.82rpx;
+            height: 32.84rpx;
+          }
+        }
+      }
     }
   }
 }

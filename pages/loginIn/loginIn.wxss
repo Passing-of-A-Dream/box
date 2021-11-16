@@ -1,4 +1,5 @@
 .loginIn {
+  height: 100vh;
   background: #252837;
   width: calc(100% - 64px);
   padding: 0 32px 40rpx 32px;

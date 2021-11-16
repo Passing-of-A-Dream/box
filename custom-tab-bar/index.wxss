@@ -1,0 +1,27 @@
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 53px;
+  background: #252838;
+  display: flex;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 99999999;
+}
+
+.tab-bar-item {
+  /* z-index: 99999999; */
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tab-bar-item image {
+  width: 20px;
+  height: 20px;
+}
+
