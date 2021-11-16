@@ -2,10 +2,21 @@
 <view class="container" style="padding-top: {{navHeight}}px;height:calc(100vh - {{navHeight}}px);">
   <!-- 背景图 -->
   <view class="background">
-    <map class="map" latitude="{{latitude}}" longitude="{{longitude}}"></map>
+    <map enable-zoom="{{false}}" enable-scroll="{{false}}" bindcallouttap="callouttap" class="map" markers="{{markers}}" 
+      latitude="{{latitude}}" longitude="{{longitude}}">
+      <cover-view slot="callout">
+        <block wx:for="{{customCalloutMarkerIds}}" wx:key="*this">
+          <cover-view class="customCallout" marker-id="{{item}}">
+            <cover-view class="content">
+              {{item}}-盒子危机
+            </cover-view>
+          </cover-view>
+        </block>
+      </cover-view>
+    </map>
   </view>
   <!-- 蒙层 -->
-  <view class="mantle"></view>
+  <!-- <view class="mantle"></view> -->
   <!-- 主要内容 -->
   <view class="index">
     <view class="top">
@@ -26,7 +37,9 @@
           <button>匹配</button>
         </view>
         <view class="position bgcolor">
-          <button><image src="/static/img/matching.svg"></image></button>
+          <button>
+            <image src="/static/img/matching.svg"></image>
+          </button>
         </view>
       </view>
     </view>

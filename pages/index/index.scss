@@ -1,16 +1,25 @@
 .container {
   width: 100%;
-  // 背景
+  // 地图
   .background {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -999;
+    z-index: 1;
     width: 100%;
     height: 100%;
     .map {
       height: 100%;
       width: 100%;
+      .customCallout {
+        width: 278rpx;
+        height: 72rpx;
+        border-radius: 40rpx;
+        background: #0FC1B5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
   // 蒙层
@@ -18,10 +27,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -990;
+    z-index: 0;
     height: 100%;
     width: 100%;
-    background: rgba($color: #222533, $alpha: 0.3);
+    // background: rgba($color: #222533, $alpha: 0.3);
   }
   // 页面主要内容
   .index {
@@ -58,7 +67,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        background: rgba($color: #0fc1b5, $alpha: 0.28);
+        // background: rgba($color: #0fc1b5, $alpha: 0.28);
         .oval_2 {
           width: 432rpx;
           height: 432rpx;
@@ -66,7 +75,7 @@
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background: rgba($color: #0fc1b5, $alpha: 0.13);
+          // background: rgba($color: #0fc1b5, $alpha: 0.13);
           .oval_3 {
             width: 212rpx;
             height: 212rpx;
@@ -74,11 +83,14 @@
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background: rgba($color: #0fc1b5, $alpha: 0.14);
+            position: relative;
+            // background: rgba($color: #0fc1b5, $alpha: 0.14);
             image {
               width: 61.72rpx;
               height: 61.72rpx;
               border-radius: 50%;
+              position: absolute;
+              z-index: 2;
             }
           }
         }
@@ -90,21 +102,42 @@
       bottom: calc(83px + constant(safe-area-inset-bottom)); /*兼容 IOS<11.2*/
       bottom: calc(83px + env(safe-area-inset-bottom)); /*兼容 IOS>11.2*/
       width: 100%;
+      z-index: 2;
       .button {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         height: 30px;
         width: 100%;
-        // 按钮背景颜色
+        position: relative;
+        // 按钮背景颜色 公共样式
         .bgcolor button {
           color: #fff;
           background: #0fc1b5;
+          font-size: 30rpx;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #0fc1b5;
+        }
+        .matching {
+          button {
+            width: 378rpx;
+            height: 100rpx;
+            border-radius: 100rpx;
+          }
         }
         .position {
-          image {
-            width: 32.82rpx;
-            height: 32.84rpx;
+          position: absolute;
+          right: 28rpx;
+          button {
+            width: 100rpx;
+            height: 100rpx;
+            border-radius: 50%;
+            image {
+              width: 32.82rpx;
+              height: 32.84rpx;
+            }
           }
         }
       }

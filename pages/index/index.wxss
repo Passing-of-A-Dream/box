@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -999;
+  z-index: 1;
   width: 100%;
   height: 100%;
 }
@@ -17,14 +17,23 @@
   width: 100%;
 }
 
+.container .background .map .customCallout {
+  width: 278rpx;
+  height: 72rpx;
+  border-radius: 40rpx;
+  background: #0FC1B5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container .mantle {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -990;
+  z-index: 0;
   height: 100%;
   width: 100%;
-  background: rgba(34, 37, 51, 0.3);
 }
 
 .container .index {
@@ -65,7 +74,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgba(15, 193, 181, 0.28);
 }
 
 .container .index .content .oval_1 .oval_2 {
@@ -75,7 +83,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgba(15, 193, 181, 0.13);
 }
 
 .container .index .content .oval_1 .oval_2 .oval_3 {
@@ -85,13 +92,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: rgba(15, 193, 181, 0.14);
+  position: relative;
 }
 
 .container .index .content .oval_1 .oval_2 .oval_3 image {
   width: 61.72rpx;
   height: 61.72rpx;
   border-radius: 50%;
+  position: absolute;
+  z-index: 2;
 }
 
 .container .index .bottom {
@@ -101,22 +110,46 @@
   bottom: calc(83px + env(safe-area-inset-bottom));
   /*兼容 IOS>11.2*/
   width: 100%;
+  z-index: 2;
 }
 
 .container .index .bottom .button {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 30px;
   width: 100%;
+  position: relative;
 }
 
 .container .index .bottom .button .bgcolor button {
   color: #fff;
   background: #0fc1b5;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0fc1b5;
 }
 
-.container .index .bottom .button .position image {
+.container .index .bottom .button .matching button {
+  width: 378rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+}
+
+.container .index .bottom .button .position {
+  position: absolute;
+  right: 28rpx;
+}
+
+.container .index .bottom .button .position button {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.container .index .bottom .button .position button image {
   width: 32.82rpx;
   height: 32.84rpx;
 }
