@@ -1,0 +1,87 @@
+.tab {
+  background: #252838;
+  height: 100%;
+  margin-top: 28rpx;
+  .tab-view {
+    display: flex;
+    justify-content: center;
+    .Label {
+      display: flex;
+      width: 692rpx;
+      height: 70rpx;
+      border-radius: 10rpx;
+      overflow: hidden;
+      .TabBgColor {
+        background: #0fc1b5 !important;
+      }
+      .tabContent {
+        width: 50%;
+        background: #303342;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+    }
+  }
+  .content {
+    height: calc(100% - 100rpx);
+    margin-top: 30rpx;
+    .wx-scroll {
+      padding: 0 28rpx;
+      .Proposition {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10rpx;
+        .ProCon {
+          width: 300rpx;
+          height: 322rpx;
+          background: #2b2f3f;
+          border-radius: 10rpx;
+          margin-bottom: 20rpx;
+          padding: 20rpx 17rpx;
+          .card {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .top {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              .image{
+                width: 300rpx;
+                height: 220rpx;
+                border-radius: 8rpx;
+                overflow: hidden;
+                image {
+                  height: 100%;
+                  width: 100%;
+                }
+              }
+            }
+            .bottom {
+              .state {
+                .stateWord{
+                  color: #fff;
+                  font-family: NunitoSans-Bold;
+                  font-size: 26rpx;
+                }
+                .stateWord:nth-child(2){
+                  padding-right: 16rpx;
+                  color: #0FC1B5;
+                  font-family: NunitoSans-Regular;
+                  font-size: 22rpx;
+                  display: flex;
+                  justify-content: space-between;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

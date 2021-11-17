@@ -1,11 +1,14 @@
-// pages/task/task.js
+const App = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    navHeight: App.globalData.navHeight + 30 + 7, // 状态栏和导航栏高度
+    TabBgColor: true,   // tab标签背景颜色控制
+    ColorOrImg: true,
   },
 
   /**
@@ -13,6 +16,18 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+  // tab标签背景颜色切换
+  TabBgColor(){
+    this.setData({
+      TabBgColor: true
+    })
+  },
+  TabBgColor2() {
+    this.setData({
+      TabBgColor: false
+    })
   },
 
   /**

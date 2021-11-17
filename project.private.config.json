@@ -23,6 +23,12 @@
           "pathName": "pages/index/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "任务",
+          "pathName": "pages/task/task",
+          "query": "",
+          "scene": null
         }
       ]
     }

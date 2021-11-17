@@ -1,1 +1,97 @@
-/* pages/task/task.wxss */
+.tab {
+  background: #252838;
+  height: 100%;
+  margin-top: 28rpx;
+}
+
+.tab .tab-view {
+  display: flex;
+  justify-content: center;
+}
+
+.tab .tab-view .Label {
+  display: flex;
+  width: 692rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.tab .tab-view .Label .TabBgColor {
+  background: #0fc1b5 !important;
+}
+
+.tab .tab-view .Label .tabContent {
+  width: 50%;
+  background: #303342;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.tab .content {
+  height: calc(100% - 100rpx);
+  margin-top: 30rpx;
+}
+
+.tab .content .wx-scroll {
+  padding: 0 28rpx;
+}
+
+.tab .content .wx-scroll .Proposition {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+}
+
+.tab .content .wx-scroll .Proposition .ProCon {
+  width: 300rpx;
+  height: 322rpx;
+  background: #2b2f3f;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  padding: 20rpx 17rpx;
+}
+
+.tab .content .wx-scroll .Proposition .ProCon .card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tab .content .wx-scroll .Proposition .ProCon .card .top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tab .content .wx-scroll .Proposition .ProCon .card .top .image {
+  width: 300rpx;
+  height: 220rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.tab .content .wx-scroll .Proposition .ProCon .card .top .image image {
+  height: 100%;
+  width: 100%;
+}
+
+.tab .content .wx-scroll .Proposition .ProCon .card .bottom .state .stateWord {
+  color: #fff;
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}
+
+.tab .content .wx-scroll .Proposition .ProCon .card .bottom .state .stateWord:nth-child(2) {
+  padding-right: 16rpx;
+  color: #0FC1B5;
+  font-family: NunitoSans-Regular;
+  font-size: 22rpx;
+  display: flex;
+  justify-content: space-between;
+}

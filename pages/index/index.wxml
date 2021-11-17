@@ -1,5 +1,15 @@
-<van-popup show="{{ show }}" bind:close="onClose">
-  <view class="van-popup">到台上歌唱一曲</view>
+<van-popup show="{{ show }}" custom-style="background: transparent;">
+  <view class="popup" style="background: {{backgroundColor}};">
+    <view class="van-popup">{{Proposition}}</view>
+    <view class="Name">
+      <text>{{NpcName}}</text>
+      <text>距离我: {{distance}}km</text>
+    </view>
+  </view>
+  <view class="popup-button">
+    <button bindtap="onClose">放弃</button>
+    <button>去看看</button>
+  </view>
 </van-popup>
 <view class="container" style="padding-top: {{navHeight}}px;height:calc(100vh - {{navHeight}}px);">
   <!-- 背景图 -->
@@ -10,13 +20,16 @@
         <block wx:for="{{customCalloutMarkerIds}}" wx:key="*this">
           <cover-view class="customCallout" marker-id="{{item}}">
             <cover-view class="content">
-              <cover-view>不二酒吧(紫荆店)</cover-view>
-              <cover-view>热度：1003</cover-view>
-              <cover-image src="/static/img/Icon@Go.svg" />
+              <cover-view>{{NpcName}}</cover-view>
+              <cover-view>热度：{{heat}}</cover-view>
             </cover-view>
+            <cover-image src="/static/img/Icon@Go.svg" />
           </cover-view>
         </block>
       </cover-view>
+      <view class="image">
+        <image src="{{avatarUrl}}" />
+      </view>
     </map>
   </view>
   <!-- 蒙层 -->
@@ -38,7 +51,7 @@
     <view class="bottom">
       <view class="button">
         <view class="matching bgcolor">
-          <button>匹配</button>
+          <button bindtap="match">匹配</button>
         </view>
         <view class="position bgcolor">
           <button>

@@ -1,5 +1,5 @@
 <!-- 导航栏 -->
-<head title="注册" color="#252837"></head>
+<head backShow="{{true}}" BgColor="#252837"></head>
 <!-- 首次注册页面 -->
 <view class="loginIn" style="padding-top: {{navHeight}}px;height:100%">
 <view class="head">

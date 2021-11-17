@@ -1,2 +1,42 @@
-<!--pages/task/task.wxml-->
-<text>pages/task/task.wxml</text>
+<head title="我的命题" backShow="{{false}}" BgColor="#2B2F3F"></head>
+<view class="tab" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px - 28rpx)">
+  <view class="tab-view">
+    <view class="Label">
+      <view bindtap="TabBgColor" class="tabContent {{TabBgColor ? 'TabBgColor':''}}">
+        <text>进行中</text>
+      </view>
+      <view bindtap="TabBgColor2" class="tabContent {{TabBgColor ? '':'TabBgColor'}}">
+        <text>历史</text>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="wx-scroll" style="height: calc(100% - 110rpx);">
+      <scroll-view scroll-y="true" style="height:calc(100% - 44rpx);">
+        <view class="Proposition">
+          <view class="ProCon" wx:for="{{8}}" wx:key="index">
+            <view class="card">
+              <view class="top">
+                <view wx:if="{{ColorOrImg}}" class="image">
+                  <image src="/static/img/StateImg.png" />
+                </view>
+                <view></view>
+              </view>
+              <view class="bottom">
+                <view class="state">
+                  <view class="stateWord">
+                    <text>不二酒吧</text>
+                  </view>
+                  <view class="stateWord">
+                    <text>匹配玩家中...</text>
+                    <text>3名玩家</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

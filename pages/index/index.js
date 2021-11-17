@@ -8,61 +8,83 @@ Page({
     latitude: 30.65984, // 经度
     longitude: 104.10194, // 维度
     avatarUrl: "", // 用户头像
-    customCalloutMarkerIds: [],
-    markers: [{
-      iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
-      id: 0,
-      latitude: 30.65887,
-      longitude: 104.10195,
-      width: 31,
-      height: 31,
-      zIndex: 999,
-      customCallout: {
-        anchorY: 0,
-        anchorX: 0,
-        display: 'BYCLICK',
-      },
-      label: {
-        borderRadius: 31
-      }
-    }, {
-      iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
-      id: 1,
-      latitude: 30.65860,
-      longitude: 104.10350,
-      width: 31,
-      height: 31,
-      customCallout: {
-        anchorY: 0,
-        anchorX: 0,
-        display: 'BYCLICK',
-      },
-    }, {
-      iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
-      id: 2,
-      latitude: 30.66060,
-      longitude: 104.10090,
-      width: 31,
-      height: 31,
-      customCallout: {
-        anchorY: 0,
-        anchorX: 0,
-        display: 'BYCLICK',
-      },
-    }, ], //  地图选点
-    show: true,  // 遮罩层的显示控制
+    Proposition: "到台上歌唱一曲",  // 命题
+    NpcName: "不二酒吧(紫荆店)",  // Npc名字
+    backgroundColor: "#8d9dea",   // 弹出层背景颜色
+    distance: 7,  // 距离
+    heat: 1003,  // 热度
+    show: false,  // 遮罩层的显示控制
+    customCalloutMarkerIds: [],   // 地图markers选点Id
+    markers: [
+      {
+        iconPath: wx.getStorageSync("userInfo").avatarUrl,
+        id: 0,
+        latitude: wx.getStorageSync("latitude"),
+        longitude: wx.getStorageSync("longitude"),
+        width: 31,
+        height: 31,
+        zIndex: 999999,
+        borderRadius: 31,
+        customCallout: {
+          anchorY: -3,
+          anchorX: 0,
+          display: 'BYCLICK',
+        },
+      }, // 第一永远是用户自己
+      {
+        iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
+        id: 1,
+        latitude: 30.65887,
+        longitude: 104.10195,
+        width: 31,
+        height: 31,
+        zIndex: 999999,
+        customCallout: {
+          anchorY: -3,
+          anchorX: 0,
+          display: 'BYCLICK',
+        },
+        label: {
+          borderRadius: 31
+        }
+      }, {
+        iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
+        id: 2,
+        latitude: 30.65860,
+        longitude: 104.10350,
+        width: 31,
+        height: 31,
+        zIndex: 999999,
+        customCallout: {
+          anchorY: -3,
+          anchorX: 0,
+          display: 'BYCLICK',
+        },
+      }, {
+        iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
+        id: 3,
+        latitude: 30.66060,
+        longitude: 104.10090,
+        width: 31,
+        height: 31,
+        zIndex: 999999,
+        customCallout: {
+          anchorY: -3,
+          anchorX: 0,
+          display: 'BYCLICK',
+        },
+      },], //  地图选点
   },
   onLoad: function (options) {
-    // 获取用户经纬度
+    // 获取用户经纬度以及用户头像
     this.setData({
-      // latitude: wx.getStorageSync("latitude"),
-      longitude: wx.getStorageSync("longitude"),
-      avatarUrl: wx.getStorageSync("userInfo").avatarUrl
+      latitude: wx.getStorageSync("latitude"),
+      longitude: wx.getStorageSync("longitude")
     })
     // 地图markers的上弹窗
     let customCalloutMarkerIds = []
     let ids = this.data.markers
-    for (let i = 0; i < ids.length; i++) {
+    for (let i = 1; i < ids.length; i++) {
       customCalloutMarkerIds.push(ids[i].id)
     }
     this.setData({
@@ -70,13 +92,17 @@ Page({
     })
     console.log(this.data.customCalloutMarkerIds);
   },
-  // 点击弹出遮罩层
+  // 点击前往Npc主页
   callouttap(e) {
+
+  },
+  // 点击匹配弹出遮罩层
+  match(e) {
     this.setData({
       show: true
     })
   },
-  // 点击遮罩层关闭
+  // 点击放弃遮罩层关闭
   onClose() {
     this.setData({
       show: false

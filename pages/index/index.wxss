@@ -15,6 +15,7 @@
 .container .background .map {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .container .background .map .customCallout {
@@ -45,7 +46,7 @@
   font-size: 20rpx;
 }
 
-.container .background .map .customCallout .content cover-image {
+.container .background .map .customCallout cover-image {
   position: absolute;
   right: 20rpx;
   top: 26rpx;
@@ -53,13 +54,17 @@
   height: 20rpx;
 }
 
-.container .mantle {
-  position: fixed;
-  top: 0;
-  left: 0;
+.container .background .map .image {
+  position: absolute;
+  top: calc(50% - 62rpx);
+  left: calc(50% - 31rpx);
   z-index: 0;
-  height: 100%;
-  width: 100%;
+}
+
+.container .background .map .image image {
+  width: 62rpx;
+  height: 62rpx;
+  border-radius: 50%;
 }
 
 .container .index {
@@ -83,50 +88,6 @@
 .container .index .top image {
   height: 100%;
   width: 100%;
-}
-
-.container .index .content {
-  width: 100%;
-  height: calc(100% - 260rpx);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .index .content .oval_1 {
-  width: 716rpx;
-  height: 716rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.container .index .content .oval_1 .oval_2 {
-  width: 432rpx;
-  height: 432rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.container .index .content .oval_1 .oval_2 .oval_3 {
-  width: 212rpx;
-  height: 212rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  position: relative;
-}
-
-.container .index .content .oval_1 .oval_2 .oval_3 image {
-  width: 61.72rpx;
-  height: 61.72rpx;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 2;
 }
 
 .container .index .bottom {
@@ -180,11 +141,14 @@
   height: 32.84rpx;
 }
 
-.van-popup {
+.popup {
+  border-radius: 22rpx;
+  overflow: hidden;
+}
+
+.popup .van-popup {
   width: 686rpx;
-  height: 812rpx;
-  border-radius: 10rpx;
-  background: #8d9dea;
+  height: 736rpx;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,4 +156,39 @@
   font-family: AlibabaPuHuiTiB;
   font-size: 48rpx;
   font-weight: bold;
+}
+
+.popup .Name {
+  padding: 0 30rpx 40rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: NunitoSans-Bold;
+  font-size: 13px;
+}
+
+.popup .Name text:nth-child(2) {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.popup-button {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34rpx;
+}
+
+.popup-button button {
+  width: 314rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  color: #fff;
+}
+
+.popup-button button:nth-child(1) {
+  background: #303342;
+}
+
+.popup-button button:nth-child(2) {
+  background: #0fc1b5;
 }

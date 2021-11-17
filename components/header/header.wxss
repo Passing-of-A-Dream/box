@@ -11,6 +11,9 @@
   display: flex;
   align-items: center;
   z-index: 99999999;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 30rpx;
+  font-weight: bold;
 }
 
 .head image {

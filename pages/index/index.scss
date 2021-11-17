@@ -11,6 +11,7 @@
     .map {
       height: 100%;
       width: 100%;
+      position: relative;
       .customCallout {
         width: 278rpx;
         height: 72rpx;
@@ -33,27 +34,38 @@
           cover-view:nth-child(2) {
             font-size: 20rpx;
           }
-          cover-image {
-            position: absolute;
-            right: 20rpx;
-            top: 26rpx;
-            width: 12rpx;
-            height: 20rpx;
-          }
+        }
+        cover-image {
+          position: absolute;
+          right: 20rpx;
+          top: 26rpx;
+          width: 12rpx;
+          height: 20rpx;
+        }
+      }
+      .image {
+        position: absolute;
+        top: calc(50% - 62rpx);
+        left: calc(50% - 31rpx);
+        z-index: 0;
+        image {
+          width: 62rpx;
+          height: 62rpx;
+          border-radius: 50%;
         }
       }
     }
   }
   // 蒙层
-  .mantle {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    // background: rgba($color: #222533, $alpha: 0.3);
-  }
+  // .mantle {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   // background: rgba($color: #222533, $alpha: 0.3);
+  // }
   // 页面主要内容
   .index {
     height: 100%;
@@ -76,47 +88,47 @@
     }
     // 页面中间用户头像、圆环部分
     .content {
-      // margin-top: 210rpx;
-      width: 100%;
-      height: calc(100% - 260rpx);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .oval_1 {
-        width: 716rpx;
-        height: 716rpx;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        // background: rgba($color: #0fc1b5, $alpha: 0.28);
-        .oval_2 {
-          width: 432rpx;
-          height: 432rpx;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          // background: rgba($color: #0fc1b5, $alpha: 0.13);
-          .oval_3 {
-            width: 212rpx;
-            height: 212rpx;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            position: relative;
-            // background: rgba($color: #0fc1b5, $alpha: 0.14);
-            image {
-              width: 61.72rpx;
-              height: 61.72rpx;
-              border-radius: 50%;
-              position: absolute;
-              z-index: 2;
-            }
-          }
-        }
-      }
+      //   // margin-top: 210rpx;
+      //   width: 100%;
+      //   height: calc(100% - 260rpx);
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   .oval_1 {
+      //     width: 716rpx;
+      //     height: 716rpx;
+      //     display: flex;
+      //     justify-content: center;
+      //     align-items: center;
+      //     border-radius: 50%;
+      //     // background: rgba($color: #0fc1b5, $alpha: 0.28);
+      //     .oval_2 {
+      //       width: 432rpx;
+      //       height: 432rpx;
+      //       display: flex;
+      //       justify-content: center;
+      //       align-items: center;
+      //       border-radius: 50%;
+      //       // background: rgba($color: #0fc1b5, $alpha: 0.13);
+      //       .oval_3 {
+      //         width: 212rpx;
+      //         height: 212rpx;
+      //         display: flex;
+      //         justify-content: center;
+      //         align-items: center;
+      //         border-radius: 50%;
+      //         position: relative;
+      //         // background: rgba($color: #0fc1b5, $alpha: 0.14);
+      //         image {
+      //           width: 61.72rpx;
+      //           height: 61.72rpx;
+      //           border-radius: 50%;
+      //           position: absolute;
+      //           z-index: 2;
+      //         }
+      //       }
+      //     }
+      //   }
     }
     // 按钮部分
     .bottom {
@@ -166,16 +178,48 @@
     }
   }
 }
-.van-popup {
-  width: 686rpx;
-  height: 812rpx;
-  border-radius: 10rpx;
-  background: #8d9dea;
+// 弹出层
+.popup {
+  border-radius: 22rpx;
+  overflow: hidden;
+  .van-popup {
+    width: 686rpx;
+    height: 736rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: AlibabaPuHuiTiB;
+    font-size: 48rpx;
+    font-weight: bold;
+  }
+  .Name {
+    padding: 0 30rpx 40rpx 30rpx;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-family: NunitoSans-Bold;
+    font-size: 13px;
+    text:nth-child(2) {
+      color: rgba($color: #fff, $alpha: 0.66);
+    }
+  }
+}
+.popup-button {
+  background: transparent;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-family: AlibabaPuHuiTiB;
-  font-size: 48rpx;
-  font-weight: bold;
+  justify-content: space-between;
+  margin-top: 34rpx;
+  button {
+    width: 314rpx;
+    height: 100rpx;
+    border-radius: 100rpx;
+    color: #fff;
+  }
+  button:nth-child(1) {
+    background: #303342;
+  }
+  button:nth-child(2) {
+    background: #0fc1b5;
+  }
 }

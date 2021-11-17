@@ -6,7 +6,8 @@ Component({
    */
   properties: {
     title:String,
-    color:String
+    BgColor:String,
+    backShow:Boolean
   },
   /**
    * 组件的初始数据
