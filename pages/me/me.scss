@@ -1,0 +1,167 @@
+.me {
+  background: #252837;
+  color: #fff;
+  .mine {
+    margin-top: 28rpx;
+    height: 100%;
+    .scroll {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      grid-row-gap: 40rpx;
+      margin-bottom: 90rpx;
+      .top {
+        width: 686rpx;
+        height: 410rpx;
+        background: #2b2f3f;
+        border-radius: 16rpx;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        .user {
+          .avaUrl {
+            width: 192rpx;
+            height: 192rpx;
+            border-radius: 50%;
+            border: 20rpx solid #222533;
+            overflow: hidden;
+            image {
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .nickName {
+            margin-top: 30rpx;
+            font-family: NunitoSans-Regular;
+            font-size: 40rpx;
+            text-align: center;
+          }
+        }
+      }
+      .verification {
+        width: 655rpx;
+        padding-left: 31rpx;
+        height: 330rpx;
+        border-radius: 16rpx;
+        background: #303342;
+      }
+      .contact {
+        width: 655rpx;
+        padding-left: 31rpx;
+        height: 330rpx;
+        background: #303342;
+        border-radius: 16rpx;
+        .title {
+          font-family: NunitoSans-Bold;
+          font-size: 22rpx;
+          color: rgba($color: #fff, $alpha: 0.4);
+          padding-top: 44rpx;
+          padding-bottom: 5rpx;
+        }
+        .content {
+          padding-bottom: 6rpx;
+          height: calc(100% - 103rpx);
+          display: grid;
+          align-items: center;
+          grid-template-rows: repeat(2, 50%);
+          .click {
+            height: 100%;
+            display: grid;
+            align-items: center;
+            position: relative;
+            image {
+              width: 16rpx;
+              height: 26rpx;
+              position: absolute;
+              right: 34rpx;
+            }
+          }
+        }
+      }
+      .information {
+        width: 655rpx;
+        padding-left: 31rpx;
+        height: 448rpx;
+        background: #303342;
+        border-radius: 16rpx;
+        .title {
+          font-family: NunitoSans-Bold;
+          font-size: 22rpx;
+          color: rgba($color: #fff, $alpha: 0.4);
+          padding-top: 44rpx;
+          padding-bottom: 5rpx;
+        }
+        .content {
+          padding-bottom: 6rpx;
+          height: calc(100% - 103rpx);
+          display: grid;
+          align-items: center;
+          grid-template-rows: repeat(3, 33.3%);
+          .click {
+            height: 100%;
+            display: grid;
+            align-items: center;
+            position: relative;
+            image {
+              width: 16rpx;
+              height: 26rpx;
+              position: absolute;
+              right: 34rpx;
+            }
+            text {
+              font-family: GenJyuuGothic-Regular;
+              font-size: 30rpx;
+              font-weight: normal;
+              position: absolute;
+              right: 38rpx;
+              color: rgba($color: #fff, $alpha: 0.5);
+            }
+          }
+        }
+      }
+      // 公共样式  下划线
+      .border-bottom {
+        border-bottom: 1rpx solid #222229;
+      }
+    }
+  }
+}
+// 弹出层
+.pop {
+  background: #303342;
+  width: 630rpx;
+  height: 1000rpx;
+  .pop-content {
+    height: 100%;
+    color: #fff;
+    .title {
+      height: 100rpx;
+      font-size: 44rpx;
+      text-align: center;
+      line-height: 100rpx;
+    }
+    .scroll-view {
+      height: calc(100% - 100rpx);
+      box-sizing: border-box;
+      // padding: 20rpx 0 20rpx 40rpx;
+      width: 100%;
+      overflow: hidden;
+      .rich-text {
+        padding: 0 20rpx;
+        display: flex;
+        justify-items: center;
+      }
+      .button {
+        margin-top: 40rpx;
+        margin-bottom: 20rpx;
+        button {
+          color: #fff;
+          width: 80%;
+          font-size: 30rpx;
+          background: #0FC1B5;
+          border-radius: 60rpx;
+        }
+      }
+    }
+  }
+}

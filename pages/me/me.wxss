@@ -1,1 +1,188 @@
-/* pages/me/me.wxss */
+.me {
+  background: #252837;
+  color: #fff;
+}
+
+.me .mine {
+  margin-top: 28rpx;
+  height: 100%;
+}
+
+.me .mine .scroll {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 40rpx;
+  margin-bottom: 90rpx;
+}
+
+.me .mine .scroll .top {
+  width: 686rpx;
+  height: 410rpx;
+  background: #2b2f3f;
+  border-radius: 16rpx;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.me .mine .scroll .top .user .avaUrl {
+  width: 192rpx;
+  height: 192rpx;
+  border-radius: 50%;
+  border: 20rpx solid #222533;
+  overflow: hidden;
+}
+
+.me .mine .scroll .top .user .avaUrl image {
+  height: 100%;
+  width: 100%;
+}
+
+.me .mine .scroll .top .user .nickName {
+  margin-top: 30rpx;
+  font-family: NunitoSans-Regular;
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.me .mine .scroll .verification {
+  width: 655rpx;
+  padding-left: 31rpx;
+  height: 330rpx;
+  border-radius: 16rpx;
+  background: #303342;
+}
+
+.me .mine .scroll .contact {
+  width: 655rpx;
+  padding-left: 31rpx;
+  height: 330rpx;
+  background: #303342;
+  border-radius: 16rpx;
+}
+
+.me .mine .scroll .contact .title {
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 44rpx;
+  padding-bottom: 5rpx;
+}
+
+.me .mine .scroll .contact .content {
+  padding-bottom: 6rpx;
+  height: calc(100% - 103rpx);
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(2, 50%);
+}
+
+.me .mine .scroll .contact .content .click {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+
+.me .mine .scroll .contact .content .click image {
+  width: 16rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 34rpx;
+}
+
+.me .mine .scroll .information {
+  width: 655rpx;
+  padding-left: 31rpx;
+  height: 448rpx;
+  background: #303342;
+  border-radius: 16rpx;
+}
+
+.me .mine .scroll .information .title {
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 44rpx;
+  padding-bottom: 5rpx;
+}
+
+.me .mine .scroll .information .content {
+  padding-bottom: 6rpx;
+  height: calc(100% - 103rpx);
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(3, 33.3%);
+}
+
+.me .mine .scroll .information .content .click {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+
+.me .mine .scroll .information .content .click image {
+  width: 16rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 34rpx;
+}
+
+.me .mine .scroll .information .content .click text {
+  font-family: GenJyuuGothic-Regular;
+  font-size: 30rpx;
+  font-weight: normal;
+  position: absolute;
+  right: 38rpx;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.me .mine .scroll .border-bottom {
+  border-bottom: 1rpx solid #222229;
+}
+
+.pop {
+  background: #303342;
+  width: 630rpx;
+  height: 1000rpx;
+}
+
+.pop .pop-content {
+  height: 100%;
+  color: #fff;
+}
+
+.pop .pop-content .title {
+  height: 100rpx;
+  font-size: 44rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.pop .pop-content .scroll-view {
+  height: calc(100% - 100rpx);
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pop .pop-content .scroll-view .rich-text {
+  padding: 0 20rpx;
+  display: flex;
+  justify-items: center;
+}
+
+.pop .pop-content .scroll-view .button {
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.pop .pop-content .scroll-view .button button {
+  color: #fff;
+  width: 80%;
+  font-size: 30rpx;
+  background: #0FC1B5;
+  border-radius: 60rpx;
+}

@@ -1,12 +1,12 @@
-<head title="我的命题" backShow="{{false}}" BgColor="#2B2F3F"></head>
+<head title="我的命题" backShow="{{false}}" BgColor="#252837"></head>
 <view class="tab" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px - 28rpx)">
   <view class="tab-view">
     <view class="Label">
       <view bindtap="TabBgColor" class="tabContent {{TabBgColor ? 'TabBgColor':''}}">
-        <text>进行中</text>
+        <text>进行中 ({{conductNum}})</text>
       </view>
       <view bindtap="TabBgColor2" class="tabContent {{TabBgColor ? '':'TabBgColor'}}">
-        <text>历史</text>
+        <text>历史 ({{historyNum}})</text>
       </view>
     </view>
   </view>

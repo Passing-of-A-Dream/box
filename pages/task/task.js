@@ -9,6 +9,8 @@ Page({
     navHeight: App.globalData.navHeight + 30 + 7, // 状态栏和导航栏高度
     TabBgColor: true,   // tab标签背景颜色控制
     ColorOrImg: true,
+    historyNum: 0,  //  历史命题数量
+    conductNum: 0,  //  进行中命题数量
   },
 
   /**

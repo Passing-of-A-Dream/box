@@ -1,2 +1,48 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<head title="我的" backShow="{{false}}" bgcolor="#252837"></head>
+<view class="me" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px - 28rpx)">
+<view class="mine">
+  <scroll-view scroll-y="true" style="height:calc(100% - 110rpx);">
+    <view class="scroll">
+      <view class="top">
+        <view class="user">
+          <view class="avaUrl">
+            <image src="{{avatarUrl}}"></image>
+          </view>
+          <view class="nickName">{{nickName}}</view>
+        </view>
+      </view>
+      <view wx:if="{{isShow}}" class="verification">验码</view>
+      <view class="contact">
+        <view class="title">联系我们</view>
+        <view class="content">
+          <view class="click border-bottom">意见建议 <image src="/static/img/Icon@Go.svg" /></view>
+          <view class="click">联系我们 <image src="/static/img/Icon@Go.svg" /></view>
+        </view>
+      </view>
+      <view class="information">
+        <view class="title">联系我们</view>
+        <view class="content">
+          <view class="click border-bottom" bindtap="onPopup">用户协议 <image src="/static/img/Icon@Go.svg" /></view>
+          <view class="click border-bottom" bindtap="onPopup2">安全风险提示 <image src="/static/img/Icon@Go.svg" /></view>
+          <view class="click">版本号 <text>{{version}}</text></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+</view>
+<van-popup show="{{ show }}">
+  <view class="pop">
+    <view class="pop-content">
+      <view class="title">{{xy_title}}</view>
+      <scroll-view scroll-y="true" scroll-top="{{scrollNum}}" class="scroll-view">
+        <view class="rich-text">
+          <rich-text>{{rich_text}}</rich-text>
+        </view>
+        <view class="button">
+          <button bindtap="onClose">我已确认阅读</button>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</van-popup>

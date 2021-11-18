@@ -29,6 +29,12 @@
           "pathName": "pages/task/task",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
         }
       ]
     }

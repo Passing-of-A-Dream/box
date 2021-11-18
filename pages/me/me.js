@@ -1,11 +1,33 @@
-// pages/me/me.js
+const App = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    navHeight: App.globalData.navHeight + 30 + 7, // 状态栏和导航栏高度
+    avatarUrl: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
+    isShow: false,  // 验码显示
+    nickName: "昵称",   // 用户昵称
+    version: "V1.0.123",   // 版本号
+    show: true,  // 遮罩层显示
+    xy_title: "用户协议",   // 协议标题
+    rich_text: `这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
+    这是用户协议`,
+    scrollNum: 0, // 滚动区域顶部位置
   },
 
   /**
@@ -13,6 +35,24 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+  onPopup(){
+    this.setData({
+      show:true,
+      xy_title: "用户协议",
+    })
+  },
+  onPopup2(){
+    this.setData({
+      show:true,
+      xy_title: "安全风险提示"
+    })
+  },
+  onClose() {
+    this.setData({
+      show: false,
+      scrollNum: 0,
+    });
   },
 
   /**

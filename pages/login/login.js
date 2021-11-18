@@ -7,6 +7,8 @@ Page({
   data: {
     goTo: 1, // 判断是否首次登录
     userInfo: {}, // 用户资料
+    latitude: 0, // 经度
+    longitude: 0, //纬度
   },
 
   /**
@@ -16,6 +18,20 @@ Page({
 
   },
   GoIndex() {
+    let that = this;
+    // 获取用户位置信息
+    wx.getLocation({
+      success(res) {
+        // console.log(res);
+        that.setData({
+          latitude: res.latitude,
+          longitude: res.longitude
+        })
+        wx.setStorageSync('latitude', res.latitude)
+        wx.setStorageSync('longitude', res.longitude)
+      }
+    })
+
     // 获取用户信息
     wx.getUserProfile({
       desc: '展示用户信息',
@@ -30,25 +46,11 @@ Page({
           wx.navigateTo({
             url: '../loginIn/loginIn',
           });
-        } else if (this.data.goTo === 1){
+        } else if (this.data.goTo === 1) {
           wx.switchTab({
             url: '../index/index'
           })
         }
-      }
-    })
-
-    let that = this;
-    // 获取用户位置信息
-    wx.getLocation({
-      success(res) {
-        // console.log(res);
-        that.setData({
-          latitude: res.latitude,
-          longitude: res.longitude
-        })
-        wx.setStorageSync('latitude', res.latitude)
-        wx.setStorageSync('longitude', res.longitude)
       }
     })
   },

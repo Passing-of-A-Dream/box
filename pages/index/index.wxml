@@ -14,7 +14,7 @@
 <view class="container" style="padding-top: {{navHeight}}px;height:calc(100vh - {{navHeight}}px);">
   <!-- 背景图 -->
   <view class="background">
-    <map enable-zoom="{{false}}" enable-scroll="{{false}}" bindcallouttap="callouttap" class="map" markers="{{markers}}" 
+    <map enable-zoom="{{false}}" enable-scroll="{{false}}" bindcallouttap="callouttap" class="map" markers="{{markers}}" bindmarkertap="markertap" bindlabeltap="markertap" subkey="32CBZ-5E53U-NENVO-BRGRQ-WHS5V-R2FJA" scale="16" min-scale="16" max-scale="16" 
       latitude="{{latitude}}" longitude="{{longitude}}">
       <cover-view slot="callout">
         <block wx:for="{{customCalloutMarkerIds}}" wx:key="*this">
