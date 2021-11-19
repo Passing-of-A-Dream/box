@@ -1,0 +1,32 @@
+.feedback {
+  background: #252838;
+  height: 100%;
+  width: 100%;
+}
+
+.feedback .opinion {
+  margin-top: 48rpx;
+  padding: 0 32rpx;
+  width: calc(100% - 64rpx);
+}
+
+.feedback .opinion .editor {
+  height: 50%;
+  padding: 20rpx;
+  color: #fff;
+  border-radius: 20rpx;
+  background: #303342;
+}
+
+.feedback .opinion .button {
+  height: 20rpx;
+  margin-top: 80rpx;
+}
+
+.feedback .opinion .button button {
+  width: 230rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  background: #0fc1b5;
+  color: #fff;
+}

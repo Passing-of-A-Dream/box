@@ -7,10 +7,10 @@ Page({
   data: {
     navHeight: App.globalData.navHeight + 30 + 7, // 状态栏和导航栏高度
     avatarUrl: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
-    isShow: false,  // 验码显示
+    isShow: true,  // 验码显示
     nickName: "昵称",   // 用户昵称
     version: "V1.0.123",   // 版本号
-    show: true,  // 遮罩层显示
+    show: false,  // 遮罩层显示
     xy_title: "用户协议",   // 协议标题
     rich_text: `这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
     这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议这是用户协议
@@ -52,6 +52,12 @@ Page({
     this.setData({
       show: false,
       scrollNum: 0,
+    });
+  },
+  // 意见反馈
+  feedback(){
+    wx.navigateTo({
+      url: '../feedback/feedback',
     });
   },
 

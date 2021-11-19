@@ -1,0 +1,55 @@
+.chat {
+  background: #252837;
+  color: #fff;
+  .chatdetail {
+    margin-top: 32rpx;
+    height: calc(100% - 114rpx - constant(safe-area-inset-bottom));
+    height: calc(100% - 114rpx - env(safe-area-inset-bottom));
+    // border: 1rpx solid red;
+    .scroll {
+      height: 100%;
+      width: 100%;
+      .scroll-view {
+        height: 100%;
+        width: 100%;
+        .chatList {
+          height: 198rpx;
+          border-bottom: 1rpx solid #000;
+          padding: 0 32rpx 0 24rpx;
+          display: flex;
+          align-items: center;
+          .listDetail {
+            display: flex;
+            .avaUrl {
+              width: 120rpx;
+              height: 120rpx;
+              border-radius: 50%;
+              overflow: hidden;
+              image {
+                height: 100%;
+                width: 100%;
+              }
+            }
+            .words {
+              margin-left: 32rpx;
+              .nickName {
+                margin-bottom: 14rpx;
+                font-family: GenJyuuGothic-Bold;
+                font-size: 30rpx;
+                font-weight: bold;
+              }
+              .chatContent {
+                color: #27b5ac;
+                font-family: NunitoSans-Regular;
+                font-size: 30rpx;
+                text {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

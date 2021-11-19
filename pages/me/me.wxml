@@ -11,11 +11,17 @@
           <view class="nickName">{{nickName}}</view>
         </view>
       </view>
-      <view wx:if="{{isShow}}" class="verification">验码</view>
+      <view wx:if="{{isShow}}" class="verification">
+        <view class="title">NPC验码</view>
+        <view class="content">
+          <view class="click border-bottom">验码 <image src="/static/img/Icon@Go.svg" /></view>
+          <view class="click">验码记录 <image src="/static/img/Icon@Go.svg" /></view>
+        </view>
+      </view>
       <view class="contact">
         <view class="title">联系我们</view>
         <view class="content">
-          <view class="click border-bottom">意见建议 <image src="/static/img/Icon@Go.svg" /></view>
+          <view class="click border-bottom" bindtap="feedback">意见建议 <image src="/static/img/Icon@Go.svg" /></view>
           <view class="click">联系我们 <image src="/static/img/Icon@Go.svg" /></view>
         </view>
       </view>

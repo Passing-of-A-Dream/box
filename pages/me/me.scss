@@ -44,6 +44,32 @@
         height: 330rpx;
         border-radius: 16rpx;
         background: #303342;
+        .title {
+          font-family: NunitoSans-Bold;
+          font-size: 22rpx;
+          color: rgba($color: #fff, $alpha: 0.4);
+          padding-top: 44rpx;
+          padding-bottom: 5rpx;
+        }
+        .content {
+          padding-bottom: 6rpx;
+          height: calc(100% - 103rpx);
+          display: grid;
+          align-items: center;
+          grid-template-rows: repeat(2, 50%);
+          .click {
+            height: 100%;
+            display: grid;
+            align-items: center;
+            position: relative;
+            image {
+              width: 16rpx;
+              height: 26rpx;
+              position: absolute;
+              right: 34rpx;
+            }
+          }
+        }
       }
       .contact {
         width: 655rpx;
@@ -158,7 +184,7 @@
           color: #fff;
           width: 80%;
           font-size: 30rpx;
-          background: #0FC1B5;
+          background: #0fc1b5;
           border-radius: 60rpx;
         }
       }

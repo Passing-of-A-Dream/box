@@ -35,6 +35,24 @@
           "pathName": "pages/me/me",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "聊天",
+          "pathName": "pages/chat/chat",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "意见反馈",
+          "pathName": "pages/feedback/feedback",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "聊天详情",
+          "pathName": "pages/chat/chatdetail/chatdetail",
+          "query": "",
+          "scene": null
         }
       ]
     }

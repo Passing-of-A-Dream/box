@@ -5,7 +5,9 @@
     "pages/loginIn/loginIn",
     "pages/task/task",
     "pages/chat/chat",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/feedback/feedback",
+    "pages/chat/chatdetail/chatdetail"
   ],
   "tabBar": {
     "custom": true,
@@ -25,12 +27,14 @@
         "iconPath": "static/img/task.png",
         "selectedIconPath": "static/img/task_select.png",
         "text": "任务"
-      }, {
+      },
+      {
         "pagePath": "pages/chat/chat",
         "iconPath": "static/img/chat.png",
         "selectedIconPath": "static/img/chat_select.png",
         "text": "聊天"
-      }, {
+      },
+      {
         "pagePath": "pages/me/me",
         "iconPath": "static/img/me.png",
         "selectedIconPath": "static/img/me_select.png",

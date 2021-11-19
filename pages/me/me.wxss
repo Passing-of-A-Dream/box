@@ -54,6 +54,36 @@
   background: #303342;
 }
 
+.me .mine .scroll .verification .title {
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.4);
+  padding-top: 44rpx;
+  padding-bottom: 5rpx;
+}
+
+.me .mine .scroll .verification .content {
+  padding-bottom: 6rpx;
+  height: calc(100% - 103rpx);
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(2, 50%);
+}
+
+.me .mine .scroll .verification .content .click {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  position: relative;
+}
+
+.me .mine .scroll .verification .content .click image {
+  width: 16rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 34rpx;
+}
+
 .me .mine .scroll .contact {
   width: 655rpx;
   padding-left: 31rpx;
@@ -183,6 +213,6 @@
   color: #fff;
   width: 80%;
   font-size: 30rpx;
-  background: #0FC1B5;
+  background: #0fc1b5;
   border-radius: 60rpx;
 }

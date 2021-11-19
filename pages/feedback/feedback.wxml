@@ -1,0 +1,12 @@
+<head title="意见建议" backShow="{{true}}" BgColor="#252837"></head>
+<view class="feedback" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px)">
+  <view class="opinion">
+    <view class="editor">
+      <editor id="editor" bindinput="editor_input"></editor>
+    </view>
+    <view class="button">
+      <button bindtap="feedback">发送</button>
+    </view>
+  </view>
+</view>
+

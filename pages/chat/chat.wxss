@@ -1,1 +1,65 @@
-/* pages/chat/chat.wxss */
+.chat {
+  background: #252837;
+  color: #fff;
+}
+
+.chat .chatdetail {
+  margin-top: 32rpx;
+  height: calc(100% - 114rpx - constant(safe-area-inset-bottom));
+  height: calc(100% - 114rpx - env(safe-area-inset-bottom));
+}
+
+.chat .chatdetail .scroll {
+  height: 100%;
+  width: 100%;
+}
+
+.chat .chatdetail .scroll .scroll-view {
+  height: 100%;
+  width: 100%;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList {
+  height: 198rpx;
+  border-bottom: 1rpx solid #000;
+  padding: 0 32rpx 0 24rpx;
+  display: flex;
+  align-items: center;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList .listDetail {
+  display: flex;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList .listDetail .avaUrl {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList .listDetail .avaUrl image {
+  height: 100%;
+  width: 100%;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList .listDetail .words {
+  margin-left: 32rpx;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList .listDetail .words .nickName {
+  margin-bottom: 14rpx;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList .listDetail .words .chatContent {
+  color: #27b5ac;
+  font-family: NunitoSans-Regular;
+  font-size: 30rpx;
+}
+
+.chat .chatdetail .scroll .scroll-view .chatList .listDetail .words .chatContent text {
+  color: #fff;
+}
