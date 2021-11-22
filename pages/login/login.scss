@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
     z-index: -99;
-    background: rgba($color: #000000, $alpha: 0.8);
+    background: rgba($color: #000000, $alpha: 0.55);
   }
   .content {
     height: 100%;
@@ -30,6 +30,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    position: relative;
     .Logo {
       width: 222px;
       height: 128px;
@@ -48,12 +49,16 @@
       }
     }
     .button {
-      margin-top: 90px;
-      width: 314px;
-      height: 50px;
+      // margin-top: 90px;
+      // width: 100%;
+      // height: 100%;
+      // display: flex;
+      // align-items: flex-end;
+      position: absolute;
+      bottom: 180rpx;
       button {
-        height: 100%;
-        width: 100%;
+        width: 314px;
+        height: 50px;
         line-height: 50px;
         background: #0FC1B5;
         color: #fff;

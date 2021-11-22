@@ -47,7 +47,7 @@
     "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.20.2",
+  "libVersion": "2.19.6",
   "appid": "wx6957eca1fc456a3d",
   "projectname": "BOX%20CRISIS",
   "debugOptions": {

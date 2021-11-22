@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goTo: 1, // 判断是否首次登录
+    goTo: 0, // 判断是否首次登录
     userInfo: {}, // 用户资料
     latitude: 0, // 经度
     longitude: 0, //纬度
@@ -36,7 +36,7 @@ Page({
     wx.getUserProfile({
       desc: '展示用户信息',
       success: (res) => {
-        // console.log(res);
+        console.log(res.userInfo);
         this.setData({
           userInfo: res.userInfo
         })
@@ -54,11 +54,11 @@ Page({
       }
     })
   },
-  getPhoneNumber(e) {
-    // console.log(e.detail.errMsg)
-    // console.log(e.detail.iv)
-    // console.log(e.detail.encryptedData)
-  },
+  // getPhoneNumber(e) {
+  //   console.log(e.detail.errMsg)
+  //   console.log(e.detail.iv)
+  //   console.log(e.detail.encryptedData)
+  // },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

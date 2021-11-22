@@ -7,7 +7,11 @@
     "pages/chat/chat",
     "pages/me/me",
     "pages/feedback/feedback",
-    "pages/chat/chatdetail/chatdetail"
+    "pages/chat/chatdetail/chatdetail",
+    "pages/npcDetail/npcDetail",
+    "pages/propositionDetail/propositionDetail",
+    "pages/meet/meet",
+    "pages/verification/verification"
   ],
   "tabBar": {
     "custom": true,

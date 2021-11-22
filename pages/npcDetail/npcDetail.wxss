@@ -1,0 +1,176 @@
+.npcDetail {
+  background: #252837;
+  color: #fff;
+}
+
+.npcDetail .scroll-Y {
+  height: calc(100% - 42rpx);
+  padding-top: 42rpx;
+  width: 100%;
+}
+
+.npcDetail .scroll-Y .scroll-view {
+  height: 100%;
+  width: 100%;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc {
+  width: 642rpx;
+  padding: 0 22rpx;
+  height: 230rpx;
+  border-radius: 16rpx;
+  background: #2b2f3f;
+  display: flex;
+  align-items: center;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc .avatar {
+  height: 164rpx;
+  width: 164rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc .avatar image {
+  height: 100%;
+  width: 100%;
+  border-radius: 16rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc .words {
+  margin-left: 30rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc .words .npc-title {
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc .words .npc-Location {
+  font-family: SourceSansPro-Regular;
+  font-size: 24rpx;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc .words .npc-info text:first-child {
+  font-family: GenJyuuGothic-Bold;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #0fc1b5;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .npc .words .npc-info text:last-child {
+  margin-left: 50rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .proposition {
+  margin-top: 30rpx;
+  width: 662rpx;
+  border-radius: 16rpx;
+  background: #2b2f3f;
+  padding: 18rpx 12rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .proposition .title {
+  width: 632rpx;
+  height: 48rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  line-height: 48rpx;
+  color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .proposition .Detail {
+  padding: 68rpx 16rpx;
+  margin-top: 22rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16rpx;
+  background: #8d9dea;
+  font-family: AlibabaPuHuiTiB;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .proposition .award {
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .proposition .award text:first-child {
+  font-family: SourceSansPro-Regular;
+  font-size: 24rpx;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .proposition .award text:last-child {
+  font-family: SourceSansPro-Regular;
+  font-size: 24rpx;
+  font-weight: normal;
+  color: rgba(15, 193, 181, 0.6);
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce {
+  margin-top: 30rpx;
+  padding: 40rpx 28rpx;
+  width: 630rpx;
+  border-radius: 16rpx;
+  background: #2b2f3f;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce .title {
+  height: 48rpx;
+  font-family: NunitoSans-Bold;
+  line-height: 48rpx;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce .time {
+  margin-top: 26rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce .time text {
+  font-family: NunitoSans-Regular;
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce .time .time-detail {
+  margin-top: 8rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce .Precautions {
+  margin-top: 26rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce .Precautions view {
+  color: rgba(249, 250, 249, 0.6);
+  font-family: NunitoSans-Regular;
+  font-size: 24rpx;
+}
+
+.npcDetail .scroll-Y .scroll-view .scroll-content .introduce .Precautions text {
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}

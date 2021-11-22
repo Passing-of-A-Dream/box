@@ -1,0 +1,106 @@
+.verification {
+  background: #252837;
+  color: #fff;
+  // display: flex;
+  // align-items: center;
+  .user {
+    height: 100%;
+    width: 100%;
+    .content {
+      height: 70%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .title {
+        font-family: GenJyuuGothic-Bold;
+        font-size: 34rpx;
+        font-weight: bold;
+      }
+      .QR-code {
+        margin-top: 180rpx;
+        width: 292rpx;
+        height: 292rpx;
+        image {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .info {
+        width: 624rpx;
+        height: 134rpx;
+        border-radius: 16rpx;
+        margin-top: 30rpx;
+        background: rgba($color: #000000, $alpha: 0.15);
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        text {
+          font-family: NunitoSans-Regular;
+          font-size: 44rpx;
+        }
+      }
+    }
+  }
+  .store {
+    height: 100%;
+    width: 100%;
+    .scanCode {
+      height: 82%;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      flex-direction: column;
+      .title {
+        margin-top: 200rpx;
+      }
+      .btnScan {
+        margin-top: 50rpx;
+        button {
+          width: 350rpx;
+          height: 80rpx;
+          border-radius: 80rpx;
+          line-height: 80rpx;
+          font-size: 32rpx;
+          background: rgba($color: #0fc1b5, $alpha: 0.6);
+          color: rgba($color: #fff, $alpha: 0.9);
+        }
+      }
+      .scroll {
+        margin-top: 40rpx;
+        height: 60%;
+        .scroll-view {
+          height: 100%;
+          .info {
+            margin-bottom: 20rpx;
+            width: 624rpx;
+            height: 134rpx;
+            border-radius: 16rpx;
+            background: rgba($color: #000000, $alpha: 0.15);
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            text {
+              font-family: NunitoSans-Regular;
+              font-size: 44rpx;
+            }
+          }
+        }
+      }
+    }
+    .button {
+      position: fixed;
+      bottom: 60rpx;
+      width: 100%;
+      button {
+        width: 622rpx;
+        height: 100rpx;
+        border-radius: 100rpx;
+        background: #0fc1b5;
+        color: #fff;
+        line-height: 100rpx;
+      }
+    }
+  }
+}

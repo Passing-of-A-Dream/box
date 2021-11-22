@@ -1,0 +1,119 @@
+.meet {
+  height: 100vh;
+  width: 100%;
+}
+
+.meet .map {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.meet .map .cover-view {
+  width: calc(100% - 48rpx);
+}
+
+.meet .map .cover-view .content {
+  height: calc(100% - 44rpx);
+  width: 100%;
+  padding: 0 24rpx;
+  padding-bottom: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meet .map .cover-view .content .state {
+  padding: 40rpx 0;
+  color: #fff;
+  font-family: AlibabaPuHuiTiB;
+  font-size: 120rpx;
+  font-weight: bold;
+}
+
+.meet .map .cover-view .content .state .item {
+  display: inline-block;
+  color: #fff;
+  font-family: AlibabaPuHuiTiB;
+  font-size: 120rpx;
+  font-weight: bold;
+}
+
+.meet .map .cover-view .content .user {
+  margin-bottom: calc(20rpx + constant(safe-area-inset-bottom));
+  margin-bottom: calc(20rpx + env(safe-area-inset-bottom));
+  height: calc(100% - 321rpx - constant(safe-area-inset-bottom));
+  height: calc(100% - 321rpx - env(safe-area-inset-bottom));
+  width: 666rpx;
+  padding: 0 20rpx;
+  padding-bottom: 41rpx;
+  border-radius: 16rpx;
+  background: #2b2f3f;
+}
+
+.meet .map .cover-view .content .user .title {
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-top: 26rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.meet .map .cover-view .content .user .scroll-Y {
+  height: calc(100% - 68rpx);
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48rpx;
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo .avatar {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo .avatar image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo .info {
+  margin-left: 32rpx;
+  height: 120rpx;
+  width: calc(100% - 320rpx);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo .info text:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo .button {
+  width: 198rpx;
+  height: 72rpx;
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo .button .van-button {
+  height: 100%;
+  width: 100%;
+  border-radius: 8rpx;
+  color: #fff;
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo:first-child {
+  margin-top: 20rpx;
+}
+
+.meet .map .cover-view .content .user .scroll-Y .userInfo:last-child {
+  margin-bottom: 0rpx;
+}

@@ -1,5 +1,4 @@
 .loginIn {
-  height: 100vh;
   background: #252837;
   width: calc(100% - 64px);
   padding: 0 32px 40rpx 32px;
@@ -9,14 +8,7 @@
   align-items: center;
 }
 
-.title {
-  font-family: GenJyuuGothic-Bold;
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.head {
+.loginIn .head {
   width: 100%;
   height: 96px;
   margin-top: 52px;
@@ -25,25 +17,25 @@
   align-items: center;
 }
 
-.head .avatar {
+.loginIn .head .avatar {
   height: 100%;
   width: 96px;
   position: relative;
 }
 
-.head .avatar .image {
+.loginIn .head .avatar .image {
   border-radius: 50%;
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
 
-.head .avatar .image image {
+.loginIn .head .avatar .image image {
   height: 100%;
   width: 100%;
 }
 
-.head .avatar .icon {
+.loginIn .head .avatar .icon {
   position: absolute;
   right: -3px;
   bottom: -3px;
@@ -53,17 +45,17 @@
   overflow: hidden;
 }
 
-.head .avatar .icon image {
+.loginIn .head .avatar .icon image {
   height: 100%;
   width: 100%;
 }
 
-.sex {
+.loginIn .sex {
   margin-top: 32px;
   color: #fff;
 }
 
-.sex .select .weui-radio-label {
+.loginIn .sex .select .weui-radio-label {
   margin-top: 14px;
   padding: 0 14px;
   width: 283px;
@@ -75,29 +67,29 @@
   align-items: center;
 }
 
-.sex .select .weui-radio-label .weui-radio-name {
+.loginIn .sex .select .weui-radio-label .weui-radio-name {
   display: flex;
   font-family: SFUIDisplay-Medium;
   font-size: 15px;
 }
 
-.sex .select .weui-radio-label .weui-radio-name image {
+.loginIn .sex .select .weui-radio-label .weui-radio-name image {
   margin-right: 25.38px;
   width: 20.61px;
   height: 20.62px;
 }
 
-.sex text {
+.loginIn .sex text {
   display: block;
   margin-top: 16px;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.age {
+.loginIn .age {
   margin-top: 21px;
 }
 
-.age .select {
+.loginIn .age .select {
   margin-top: 14px;
   padding: 0 14px;
   width: 283px;
@@ -106,24 +98,25 @@
   border-radius: 5px;
 }
 
-.age .select .weui-picker {
+.loginIn .age .select .weui-picker {
   width: 100%;
   height: 100%;
+  font-size: 35px;
 }
 
-.age .select .weui-picker .picker {
+.loginIn .age .select .weui-picker .picker {
   width: 100%;
   padding: 14.5px 0;
   font-family: SFUIDisplay-Medium;
-  font-size: 15px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.3);
 }
 
-.name {
+.loginIn .name {
   margin-top: 21px;
 }
 
-.name .input {
+.loginIn .name .input {
   margin-top: 14px;
   padding: 0 14px;
   width: 283px;
@@ -136,25 +129,32 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.name .input input {
+.loginIn .name .input input {
   height: 100%;
   width: 100%;
 }
 
-.button {
-  margin-top: 40px;
-  padding-bottom: 30px;
+.loginIn .button {
+  margin-top: 60rpx;
+  margin-bottom: calc(20rpx + env(safe-area-inset-bottom));
 }
 
-.button button {
+.loginIn .button button {
   width: 314px;
   height: 50px;
   margin: 0;
   line-height: 50px;
-  background: #0FC1B5;
+  background: #0fc1b5;
   color: #fff;
   font-family: GenJyuuGothic-Bold;
   font-size: 30rpx;
   font-weight: bold;
   border-radius: 50px;
+}
+
+.title {
+  font-family: GenJyuuGothic-Bold;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }

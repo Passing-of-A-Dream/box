@@ -25,7 +25,7 @@
   top: 0;
   left: 0;
   z-index: -99;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .login .content {
@@ -35,6 +35,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .login .content .Logo {
@@ -59,14 +60,13 @@
 }
 
 .login .content .button {
-  margin-top: 90px;
-  width: 314px;
-  height: 50px;
+  position: absolute;
+  bottom: 180rpx;
 }
 
 .login .content .button button {
-  height: 100%;
-  width: 100%;
+  width: 314px;
+  height: 50px;
   line-height: 50px;
   background: #0FC1B5;
   color: #fff;

@@ -1,0 +1,301 @@
+.propositionDetail {
+  background: #252837;
+  color: #fff;
+}
+
+.propositionDetail .scroll-view {
+  height: 100%;
+  width: 100%;
+}
+
+.propositionDetail .scroll-view .scroll-Y {
+  height: 100%;
+  width: 100%;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .top {
+  margin-top: 30rpx;
+  width: 686rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .top .Detail {
+  padding: 68rpx 17rpx;
+  margin-top: 22rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16rpx;
+  background: #8d9dea;
+  font-family: AlibabaPuHuiTiB;
+  font-size: 48rpx;
+  font-weight: bold;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .peopleNum {
+  height: 48rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  margin: 20rpx 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member {
+  width: 630rpx;
+  height: 172rpx;
+  padding: 32rpx 28rpx;
+  border-radius: 16rpx;
+  background: #2b2f3f;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .title .text {
+  display: flex;
+  justify-content: space-between;
+  height: 48rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  line-height: 48rpx;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 108rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll .scroll-X {
+  width: calc(100% - 32rpx);
+  height: 80rpx;
+  display: flex;
+  white-space: nowrap;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll .scroll-X .scroll-in {
+  display: inline-block;
+  margin-left: 20rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll .scroll-X .scroll-in .user-avatar {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll .scroll-X .scroll-in .user-avatar image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll .scroll-X .scroll-in:first-child {
+  margin: 0;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll .go {
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .member .membetScroll .go image {
+  height: 100%;
+  width: 100%;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .award {
+  margin-top: 36rpx;
+  height: 90rpx;
+  width: 626rpx;
+  padding: 26rpx 30rpx;
+  background: #eb754d;
+  border-radius: 16rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .award view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .award view text {
+  height: 38rpx;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail {
+  width: 626rpx;
+  padding: 30rpx 30rpx;
+  border-radius: 16rpx;
+  margin-top: 36rpx;
+  background: #2b2f3f;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .title {
+  height: 48rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 22rpx;
+  line-height: 48rpx;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .describe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 26rpx;
+  height: 84rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .describe text:first-child {
+  color: rgba(249, 250, 249, 0.6);
+  font-size: 24rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .describe text:last-child {
+  height: 48rpx;
+  line-height: 48rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .time {
+  margin-top: 26rpx;
+  height: 132rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .time text:first-child {
+  font-family: NunitoSans-Regular;
+  font-size: 24rpx;
+  color: rgba(249, 250, 249, 0.6);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .time text:last-child {
+  margin-top: 10rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .whether {
+  margin-top: 26rpx;
+  height: 84rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .whether text:first-child {
+  font-family: NunitoSans-Regular;
+  font-size: 24rpx;
+  color: rgba(249, 250, 249, 0.6);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .detail .whether text:last-child {
+  margin-top: 10rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc {
+  margin-top: 26rpx;
+  width: 642rpx;
+  padding: 0 22rpx;
+  height: 230rpx;
+  border-radius: 16rpx;
+  background: #2b2f3f;
+  display: flex;
+  align-items: center;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc .avatar {
+  height: 164rpx;
+  width: 164rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc .avatar image {
+  height: 100%;
+  width: 100%;
+  border-radius: 16rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc .words {
+  margin-left: 30rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc .words .npc-title {
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc .words .npc-Location {
+  font-family: SourceSansPro-Regular;
+  font-size: 24rpx;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc .words .npc-info text:first-child {
+  font-family: GenJyuuGothic-Bold;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #0fc1b5;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .npc .words .npc-info text:last-child {
+  margin-left: 50rpx;
+  font-family: NunitoSans-Bold;
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .button {
+  margin-top: 102rpx;
+  margin-bottom: 44rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .button button {
+  width: 686rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 100rpx;
+  color: #fff;
+  background: #0fc1b5;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .button2 {
+  margin-top: 102rpx;
+  margin-bottom: 44rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .button2 button {
+  width: 200rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  background: #0fc1b5;
+  line-height: 100rpx;
+  color: #fff;
+  font-family: GenJyuuGothic-Bold;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.propositionDetail .scroll-view .scroll-Y .propositionContent .button2 button:first-child {
+  background: #303342;
+}

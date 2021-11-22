@@ -183,6 +183,7 @@
   height: 100rpx;
   border-radius: 100rpx;
   color: #fff;
+  line-height: 100rpx;
 }
 
 .popup-button button:nth-child(1) {

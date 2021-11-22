@@ -1,24 +1,31 @@
 <head title="{{title}}" backShow="{{true}}" bgcolor="#252837"></head>
 <view class="chatdetail" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px)">
-<view class="proposition-container">
-  <view class="proposition">
-    <view class="propositionDetail">
-      <text>命题详情</text>
-      <view class="state">
-        <text>待碰头</text>
-        <image src="/static/img/Icon@Go.svg"></image>
+  <!-- 顶部命题 -->
+  <view class="proposition-container">
+    <view class="proposition">
+      <view class="propositionDetail">
+        <text>命题详情</text>
+        <view class="state">
+          <text>待碰头</text>
+          <image src="/static/img/Icon@Go.svg"></image>
+        </view>
+      </view>
+      <view class="userAvact">
+        <scroll-view scroll-x="{{true}}" class="AvactCcroll">
+          <view class="AvactImg" wx:for="{{8}}" wx:key="index">
+            <view class="AvactImgShow">
+              <image src="{{avatarUrl}}" />
+            </view>
+          </view>
+        </scroll-view>
+        <view class="peoples">共{{peopleNum}}人</view>
       </view>
     </view>
-    <view class="userAvact">
-      <scroll-view scroll-x="{{true}}" class="AvactCcroll">
-        <view class="AvactImg" wx:for="{{8}}" wx:key="index">
-          <view class="AvactImgShow">
-            <image src="{{avatarUrl}}" />
-          </view>
-        </view>
-      </scroll-view>
-      <view class="peoples">共{{peopleNum}}人</view>
-    </view>
   </view>
-</view>
+  <!-- 消息列表 -->
+  <TUI-message-list></TUI-message-list>
+  <!-- 消息输入框 -->
+  <view class="message-input">
+    <TUI-message-input id="message-input" bind:sendMessage="sendMessage" bind:handleCall="handleCall"></TUI-message-input>
+  </view>
 </view>

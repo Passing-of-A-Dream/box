@@ -4,6 +4,7 @@
 }
 
 .chatdetail .proposition-container {
+  position: fixed;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -87,4 +88,9 @@
   font-size: 29rpx;
   color: rgba(255, 255, 255, 0.3);
   line-height: 80rpx;
+}
+
+.message-input {
+  position: fixed;
+  bottom: 1rpx;
 }

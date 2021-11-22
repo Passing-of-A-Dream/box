@@ -14,7 +14,7 @@
       <view wx:if="{{isShow}}" class="verification">
         <view class="title">NPC验码</view>
         <view class="content">
-          <view class="click border-bottom">验码 <image src="/static/img/Icon@Go.svg" /></view>
+          <view class="click border-bottom" bindtap="saoma">验码 <image src="/static/img/Icon@Go.svg" /></view>
           <view class="click">验码记录 <image src="/static/img/Icon@Go.svg" /></view>
         </view>
       </view>

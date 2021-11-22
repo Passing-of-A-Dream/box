@@ -11,8 +11,8 @@
     </view>
   </view>
   <view class="content">
-    <view class="wx-scroll" style="height: calc(100% - 110rpx);">
-      <scroll-view scroll-y="true" style="height:calc(100% - 44rpx);">
+    <view class="wx-scroll" style="height: calc(100% - 90rpx - env(safe-area-inset-bottom));">
+      <scroll-view scroll-y="true" style="height:calc(100% - env(safe-area-inset-bottom));">
         <view class="Proposition">
           <view class="ProCon" wx:for="{{8}}" wx:key="index">
             <view class="card">

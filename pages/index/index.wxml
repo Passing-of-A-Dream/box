@@ -8,14 +8,14 @@
   </view>
   <view class="popup-button">
     <button bindtap="onClose">放弃</button>
-    <button>去看看</button>
+    <button bindtap="goTopropositionDetail">去看看</button>
   </view>
 </van-popup>
 <view class="container" style="padding-top: {{navHeight}}px;height:calc(100vh - {{navHeight}}px);">
   <!-- 背景图 -->
   <view class="background">
-    <map enable-zoom="{{false}}" enable-scroll="{{false}}" bindcallouttap="callouttap" class="map" markers="{{markers}}" bindmarkertap="markertap" bindlabeltap="markertap" subkey="32CBZ-5E53U-NENVO-BRGRQ-WHS5V-R2FJA" scale="16" min-scale="16" max-scale="16" 
-      latitude="{{latitude}}" longitude="{{longitude}}">
+    <map class="map" id="map" enable-zoom="{{true}}" enable-scroll="{{true}}" bindcallouttap="callouttap"
+    markers="{{markers}}" bindmarkertap="markertap" bindlabeltap="markertap" subkey="32CBZ-5E53U-NENVO-BRGRQ-WHS5V-R2FJA" show-location="{{true}}" scale="16" min-scale="14" max-scale="18" latitude="{{latitude}}" longitude="{{longitude}}">
       <cover-view slot="callout">
         <block wx:for="{{customCalloutMarkerIds}}" wx:key="*this">
           <cover-view class="customCallout" marker-id="{{item}}">
@@ -54,7 +54,7 @@
           <button bindtap="match">匹配</button>
         </view>
         <view class="position bgcolor">
-          <button>
+          <button bindtap="backLan">
             <image src="/static/img/matching.svg"></image>
           </button>
         </view>

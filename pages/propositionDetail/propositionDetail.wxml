@@ -1,0 +1,76 @@
+<head title="命题" backShow="{{true}}" bgcolor="#252837"></head>
+<view class="propositionDetail" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px)">
+  <view class="scroll-view">
+    <scroll-view scroll-y="{{true}}" class="scroll-Y">
+      <view class="propositionContent">
+        <view class="top">
+          <view class="Detail">匹配3名朋友，喝一次酒，分享自己的故事。</view>
+        </view>
+        <text class="peopleNum">命题累计参与人数：1023</text>
+        <view class="member">
+          <view class="title">
+            <view class="text">
+              <text>参与人员</text>
+              <text>6人成组，还差1人</text>
+            </view>
+          </view>
+          <view class="membetScroll">
+            <scroll-view scroll-x="{{true}}" class="scroll-X">
+              <view class="scroll-in" wx:for="{{6}}" wx:key="index">
+                <view class="user-avatar">
+                  <image src="{{avatarUrl}}"></image>
+                </view>
+              </view>
+            </scroll-view>
+            <view class="go">
+              <image src="/static/img/Icon@Go.svg"></image>
+            </view>
+          </view>
+        </view>
+        <view class="award">
+          <view>
+            <text>奖励</text>
+            <text>NPC验证</text>
+          </view>
+          <text>百威啤酒一瓶</text>
+        </view>
+        <view class="detail">
+          <view class="title">命题介绍</view>
+          <view class="describe">
+            <text>命题任务描述</text>
+            <text>10:00 - 22:00  （周六周日休息）</text>
+          </view>
+          <view class="time">
+            <text>有效期</text>
+            <text>自愿参与，请合理安排时间，提前与匹配成员沟通约定碰头时间，请勿在非NPC场景要求的地点碰头。</text>
+          </view>
+          <view class="whether">
+            <text>是否需要验码</text>
+            <text>是</text>
+          </view>
+        </view>
+        <view class="npc">
+          <view class="avatar">
+            <image src="{{avatarUrl}}"></image>
+          </view>
+          <view class="words">
+            <view class="npc-title">不二酒吧</view>
+            <view class="npc-Location">成都市火车南站紫荆路23号</view>
+            <view class="npc-info">
+              <text>热度：1003</text>
+              <text>距离我：7km</text>
+            </view>
+          </view>
+        </view>
+        <view wx:if="{{buttonShow === 0}}" class="button">
+          <button button>加入</button>
+        </view>
+        <view wx:if="{{buttonShow === 1}}" class="button2">
+          <button bindtap="goToBack">放弃</button>
+          <button bindtap="goToMeet">碰头</button>
+          <button bindtap="goTochat">去聊天</button>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

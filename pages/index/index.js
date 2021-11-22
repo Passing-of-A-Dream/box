@@ -31,15 +31,15 @@ Page({
           anchorX: 0,
           display: 'BYCLICK',
         },
-        label:{
-          borderRadius: 8,
-          borderWidth: 4,
-          borderColor: '#fff',
-          width:38,
-          height: 38,
-          anchorX: -19,
-          anchorY: -35
-        }
+        // label:{
+        //   borderRadius: 8,
+        //   borderWidth: 4,
+        //   borderColor: '#fff',
+        //   width:38,
+        //   height: 38,
+        //   anchorX: -19,
+        //   anchorY: -35
+        // }
       }, // 第一永远是用户自己
       {
         iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
@@ -54,11 +54,11 @@ Page({
           anchorX: 0,
           display: 'BYCLICK',
         },
-        label:{
+        label: {
           borderRadius: 8,
           borderWidth: 4,
           borderColor: '#fff',
-          width:38,
+          width: 38,
           height: 38,
           anchorX: -19,
           anchorY: -35
@@ -76,15 +76,15 @@ Page({
           anchorX: 0,
           display: 'BYCLICK',
         },
-        label:{
-          borderRadius: 8,
-          borderWidth: 4,
-          borderColor: '#fff',
-          width:38,
-          height: 38,
-          anchorX: -19,
-          anchorY: -35
-        }
+        // label:{
+        //   borderRadius: 8,
+        //   borderWidth: 4,
+        //   borderColor: '#fff',
+        //   width:38,
+        //   height: 38,
+        //   anchorX: -19,
+        //   anchorY: -35
+        // }
       }, {
         iconPath: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
         id: 3,
@@ -98,24 +98,24 @@ Page({
           anchorX: 0,
           display: 'BYCLICK',
         },
-        label:{
-          borderRadius: 8,
-          borderWidth: 4,
-          borderColor: '#fff',
-          width:38,
-          height: 38,
-          anchorX: -19,
-          anchorY: -35
-        }
+        // label:{
+        //   borderRadius: 8,
+        //   borderWidth: 4,
+        //   borderColor: '#fff',
+        //   width:38,
+        //   height: 38,
+        //   anchorX: -19,
+        //   anchorY: -35
+        // }
       },
     ], //  地图选点
   },
   onLoad: function (options) {
     // 获取用户经纬度以及用户头像
-    this.setData({
-      latitude: wx.getStorageSync("latitude"),
-      longitude: wx.getStorageSync("longitude")
-    })
+    // this.setData({
+    //   latitude: wx.getStorageSync("latitude"),
+    //   longitude: wx.getStorageSync("longitude")
+    // })
     // 地图markers的上弹窗
     let customCalloutMarkerIds = []
     let ids = this.data.markers
@@ -128,9 +128,22 @@ Page({
     console.log(this.data.customCalloutMarkerIds);
     console.log(this.data.markers);
   },
+
+  backLan() {
+    let mpCtx = wx.createMapContext('map')
+    mpCtx.moveToLocation()
+  },
   // 点击前往Npc主页
   callouttap(e) {
-
+    wx.navigateTo({
+      url: '../npcDetail/npcDetail',
+    })
+  },
+  // 点击前往命题详情
+  goTopropositionDetail() {
+    wx.navigateTo({
+      url: '../propositionDetail/propositionDetail',
+    })
   },
   // 点击匹配弹出遮罩层
   match(e) {

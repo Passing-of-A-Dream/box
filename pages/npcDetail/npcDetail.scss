@@ -1,0 +1,156 @@
+.npcDetail {
+  background: #252837;
+  color: #fff;
+  .scroll-Y {
+    height: calc(100% - 42rpx);
+    padding-top: 42rpx;
+    width: 100%;
+    .scroll-view {
+      height: 100%;
+      width: 100%;
+      .scroll-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .npc {
+          width: 642rpx;
+          padding: 0 22rpx;
+          height: 230rpx;
+          border-radius: 16rpx;
+          background: #2b2f3f;
+          display: flex;
+          align-items: center;
+          .avatar {
+            height: 164rpx;
+            width: 164rpx;
+            image {
+              height: 100%;
+              width: 100%;
+              border-radius: 16rpx;
+            }
+          }
+          .words {
+            margin-left: 30rpx;
+            .npc-title {
+              font-family: NunitoSans-Bold;
+              font-size: 26rpx;
+            }
+            .npc-Location {
+              font-family: SourceSansPro-Regular;
+              font-size: 24rpx;
+              font-weight: normal;
+              color: rgba($color: #fff, $alpha: 0.6);
+            }
+            .npc-info {
+              text:first-child {
+                font-family: GenJyuuGothic-Bold;
+                font-size: 24rpx;
+                font-weight: bold;
+                color: #0fc1b5;
+              }
+              text:last-child {
+                margin-left: 50rpx;
+                font-family: NunitoSans-Bold;
+                font-size: 26rpx;
+                color: rgba($color: #fff, $alpha: 0.3);
+              }
+            }
+          }
+        }
+        .proposition {
+          margin-top: 30rpx;
+          width: 662rpx;
+          // height: 360rpx;
+          border-radius: 16rpx;
+          background: #2b2f3f;
+          padding: 18rpx 12rpx;
+          .title {
+            width: 632rpx;
+            height: 48rpx;
+            font-family: NunitoSans-Bold;
+            font-size: 22rpx;
+            line-height: 48rpx;
+            color: rgba($color: #fff, $alpha: 0.3);
+            display: flex;
+            justify-content: space-between;
+          }
+          .Detail {
+            padding: 68rpx 16rpx;
+            margin-top: 22rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // 文字样式
+            border-radius: 16rpx;
+            background: #8d9dea;
+            font-family: AlibabaPuHuiTiB;
+            font-size: 48rpx;
+            font-weight: bold;
+          }
+          .award {
+            margin-top: 30rpx;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10rpx;
+            text:first-child {
+              font-family: SourceSansPro-Regular;
+              font-size: 24rpx;
+              font-weight: normal;
+              color: rgba($color: #fff, $alpha: 0.6);
+            }
+            text:last-child {
+              font-family: SourceSansPro-Regular;
+              font-size: 24rpx;
+              font-weight: normal;
+              color: rgba($color: #0fc1b5, $alpha: 0.6);
+            }
+          }
+        }
+        .introduce {
+          margin-top: 30rpx;
+          padding: 40rpx 28rpx;
+          width: 630rpx;
+          // height: 316rpx;
+          border-radius: 16rpx;
+          background: #2b2f3f;
+          .title {
+            height: 48rpx;
+            font-family: NunitoSans-Bold;
+            line-height: 48rpx;
+            font-size: 22rpx;
+            color: rgba($color: #fff, $alpha: 0.3);
+          }
+          .time {
+            margin-top: 26rpx;
+            text {
+              font-family: NunitoSans-Regular;
+              font-size: 24rpx;
+              color: rgba($color: #fff, $alpha: 0.6);
+            }
+            .time-detail {
+              margin-top: 8rpx;
+              height: 48rpx;
+              line-height: 48rpx;
+              font-family: NunitoSans-Bold;
+              font-size: 26rpx;
+            }
+          }
+          .Precautions {
+            margin-top: 26rpx;
+            view {
+              color: rgba($color: #f9faf9, $alpha: 0.6);
+              font-family: NunitoSans-Regular;
+              font-size: 24rpx;
+            }
+            text {
+              font-family: NunitoSans-Bold;
+              font-size: 26rpx;
+            }
+          }
+        }
+        padding-bottom: 100rpx;
+      }
+    }
+  }
+}

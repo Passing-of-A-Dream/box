@@ -1,0 +1,37 @@
+<head title="验码" backShow="{{true}}" bgcolor="#252837"></head>
+<view class="verification" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px)">
+  <!-- 用户显示 -->
+  <view wx:if="{{identity === 'user'}}" class="user">
+    <view class="content">
+      <view class="title">
+        <text>向NPC出示二维码</text>
+        <!-- <text>同组内其他玩家也需要出示二维码</text> -->
+      </view>
+      <view class="QR-code">
+        <image src="{{QRcode}}"></image>
+      </view>
+      <view class="info">
+        <text>2BIR-21NZ-6NB5-HU91</text>
+      </view>
+    </view>
+  </view>
+  <!-- 商家显示 -->
+  <view wx:if="{{identity === 'store'}}" class="store">
+    <view class="scanCode">
+      <view class="title">请扫描二维码</view>
+      <view class="btnScan">
+        <button bindtap="scanCode">点击开始扫码</button>
+      </view>
+      <view class="scroll">
+        <scroll-view scroll-y="{{true}}" class="scroll-view">
+          <view class="info" wx:for="{{4}}" wx:key="index">
+            <text>2BIR-21NZ-6NB5-HU91</text>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view wx:if="{{buttonShow}}" class="button">
+      <button>完成验证</button>
+    </view>
+  </view>
+</view>

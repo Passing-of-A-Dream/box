@@ -1,0 +1,32 @@
+<head title="碰头" backShow="{{true}}"></head>
+<view class="meet">
+  <map enable-zoom="{{false}}" enable-scroll="{{false}}" bindcallouttap="callouttap" class="map" subkey="32CBZ-5E53U-NENVO-BRGRQ-WHS5V-R2FJA" scale="16" min-scale="16" max-scale="16" latitude="{{latitude}}" longitude="{{longitude}}">
+    <view class="cover-view" style="padding-top: {{navHeight}}px;height: calc(100vh - {{navHeight}}px);">
+      <view class="content">
+        <view class="state"><text wx:if="{{wordShow}}">待发起碰头</text>
+          <van-count-down use-slot millisecond time="{{time}}" bind:change="onChange" bind:finish="onFinish">
+            <text class="item">{{ timeData.minutes }}:</text>
+            <text class="item">{{ timeData.seconds }}</text>
+          </van-count-down>
+        </view>
+        <view class="user">
+          <view class="title">玩家当前距离NPC：(500米范围内可以操作碰头)</view>
+          <scroll-view class="scroll-Y" scroll-y="{{scroll}}">
+            <view class="userInfo" wx:for="{{num}}" wx:key="index">
+              <view class="avatar">
+                <image src="{{avatarUrl}}"></image>
+              </view>
+              <view class="info">
+                <text>Allie Hall</text>
+                <text>498m</text>
+              </view>
+              <view class="button">
+                <van-button class="van-button" disabled="{{disabled}}" color="#0fc1b5" bind:click="match">按钮</van-button>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+    </view>
+  </map>
+</view>

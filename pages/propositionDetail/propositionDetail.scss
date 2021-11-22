@@ -1,0 +1,267 @@
+.propositionDetail {
+  background: #252837;
+  color: #fff;
+  .scroll-view {
+    height: 100%;
+    width: 100%;
+    .scroll-Y {
+      height: 100%;
+      width: 100%;
+      .propositionContent {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .top {
+          margin-top: 30rpx;
+          width: 686rpx;
+          // padding: 18rpx 12rpx;
+          .Detail {
+            padding: 68rpx 17rpx;
+            margin-top: 22rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // 文字样式
+            border-radius: 16rpx;
+            background: #8d9dea;
+            font-family: AlibabaPuHuiTiB;
+            font-size: 48rpx;
+            font-weight: bold;
+          }
+        }
+        .peopleNum {
+          height: 48rpx;
+          font-family: NunitoSans-Bold;
+          font-size: 22rpx;
+          margin: 20rpx 0;
+          color: rgba($color: #fff, $alpha: 0.3);
+        }
+        .member {
+          width: 630rpx;
+          height: 172rpx;
+          padding: 32rpx 28rpx;
+          border-radius: 16rpx;
+          background: #2b2f3f;
+          .title {
+            .text {
+              display: flex;
+              justify-content: space-between;
+              height: 48rpx;
+              font-family: NunitoSans-Bold;
+              font-size: 22rpx;
+              line-height: 48rpx;
+              color: rgba($color: #fff, $alpha: 0.3);
+            }
+          }
+          .membetScroll {
+            // margin-top: 30rpx;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 108rpx;
+            .scroll-X {
+              width: calc(100% - 32rpx);
+              height: 80rpx;
+              display: flex;
+              white-space: nowrap;
+              .scroll-in {
+                display: inline-block;
+                margin-left: 20rpx;
+                .user-avatar {
+                  height: 80rpx;
+                  width: 80rpx;
+                  image {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                  }
+                }
+              }
+              .scroll-in:first-child {
+                margin: 0;
+              }
+            }
+            .go {
+              width: 16rpx;
+              height: 26rpx;
+              image {
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .award {
+          margin-top: 36rpx;
+          height: 90rpx;
+          width: 626rpx;
+          padding: 26rpx 30rpx;
+          background: #eb754d;
+          border-radius: 16rpx;
+          view {
+            display: flex;
+            justify-content: space-between;
+            text {
+              height: 38rpx;
+              font-family: GenJyuuGothic-Bold;
+              font-size: 30rpx;
+              font-weight: bold;
+              color: rgba($color: #fff, $alpha: 0.5);
+            }
+          }
+        }
+        .detail {
+          width: 626rpx;
+          padding: 30rpx 30rpx;
+          border-radius: 16rpx;
+          margin-top: 36rpx;
+          background: #2b2f3f;
+          .title {
+            height: 48rpx;
+            font-family: NunitoSans-Bold;
+            font-size: 22rpx;
+            line-height: 48rpx;
+            color: rgba($color: #fff, $alpha: 0.3);
+          }
+          .describe {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 26rpx;
+            height: 84rpx;
+            text:first-child {
+              color: rgba($color: #f9faf9, $alpha: 0.6);
+              font-size: 24rpx;
+            }
+            text:last-child {
+              height: 48rpx;
+              line-height: 48rpx;
+              font-family: NunitoSans-Bold;
+              font-size: 26rpx;
+            }
+          }
+          .time {
+            margin-top: 26rpx;
+            height: 132rpx;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            text:first-child {
+              font-family: NunitoSans-Regular;
+              font-size: 24rpx;
+              color: rgba($color: #f9faf9, $alpha: 0.6);
+            }
+            text:last-child {
+              margin-top: 10rpx;
+              font-family: NunitoSans-Bold;
+              font-size: 26rpx;
+            }
+          }
+          .whether {
+            margin-top: 26rpx;
+            height: 84rpx;
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            text:first-child {
+              font-family: NunitoSans-Regular;
+              font-size: 24rpx;
+              color: rgba($color: #f9faf9, $alpha: 0.6);
+            }
+            text:last-child {
+              margin-top: 10rpx;
+              font-family: NunitoSans-Bold;
+              font-size: 26rpx;
+            }
+          }
+        }
+        .npc {
+          margin-top: 26rpx;
+          width: 642rpx;
+          padding: 0 22rpx;
+          height: 230rpx;
+          border-radius: 16rpx;
+          background: #2b2f3f;
+          display: flex;
+          align-items: center;
+          .avatar {
+            height: 164rpx;
+            width: 164rpx;
+            image {
+              height: 100%;
+              width: 100%;
+              border-radius: 16rpx;
+            }
+          }
+          .words {
+            margin-left: 30rpx;
+            .npc-title {
+              font-family: NunitoSans-Bold;
+              font-size: 26rpx;
+            }
+            .npc-Location {
+              font-family: SourceSansPro-Regular;
+              font-size: 24rpx;
+              font-weight: normal;
+              color: rgba($color: #fff, $alpha: 0.6);
+            }
+            .npc-info {
+              text:first-child {
+                font-family: GenJyuuGothic-Bold;
+                font-size: 24rpx;
+                font-weight: bold;
+                color: #0fc1b5;
+              }
+              text:last-child {
+                margin-left: 50rpx;
+                font-family: NunitoSans-Bold;
+                font-size: 26rpx;
+                color: rgba($color: #fff, $alpha: 0.3);
+              }
+            }
+          }
+        }
+        .button {
+          margin-top: 102rpx;
+          margin-bottom: 44rpx;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          button {
+            width: 686rpx;
+            height: 100rpx;
+            line-height: 100rpx;
+            border-radius: 100rpx;
+            color: #fff;
+            background: #0fc1b5;
+            font-family: GenJyuuGothic-Bold;
+            font-size: 30rpx;
+            font-weight: bold;
+          }
+        }
+        .button2 {
+          margin-top: 102rpx;
+          margin-bottom: 44rpx;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          button {
+            width: 200rpx;
+            height: 100rpx;
+            border-radius: 100rpx;
+            background: #0fc1b5;
+            line-height: 100rpx;
+            color: #fff;
+            font-family: GenJyuuGothic-Bold;
+            font-size: 30rpx;
+            font-weight: bold;
+          }
+          button:first-child {
+            background: #303342;
+          }
+        }
+      }
+    }
+  }
+}

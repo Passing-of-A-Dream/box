@@ -1,0 +1,121 @@
+.verification {
+  background: #252837;
+  color: #fff;
+}
+
+.verification .user {
+  height: 100%;
+  width: 100%;
+}
+
+.verification .user .content {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verification .user .content .title {
+  font-family: GenJyuuGothic-Bold;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.verification .user .content .QR-code {
+  margin-top: 180rpx;
+  width: 292rpx;
+  height: 292rpx;
+}
+
+.verification .user .content .QR-code image {
+  height: 100%;
+  width: 100%;
+}
+
+.verification .user .content .info {
+  width: 624rpx;
+  height: 134rpx;
+  border-radius: 16rpx;
+  margin-top: 30rpx;
+  background: rgba(0, 0, 0, 0.15);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.verification .user .content .info text {
+  font-family: NunitoSans-Regular;
+  font-size: 44rpx;
+}
+
+.verification .store {
+  height: 100%;
+  width: 100%;
+}
+
+.verification .store .scanCode {
+  height: 82%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.verification .store .scanCode .title {
+  margin-top: 200rpx;
+}
+
+.verification .store .scanCode .btnScan {
+  margin-top: 50rpx;
+}
+
+.verification .store .scanCode .btnScan button {
+  width: 350rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  background: rgba(15, 193, 181, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.verification .store .scanCode .scroll {
+  margin-top: 40rpx;
+  height: 60%;
+}
+
+.verification .store .scanCode .scroll .scroll-view {
+  height: 100%;
+}
+
+.verification .store .scanCode .scroll .scroll-view .info {
+  margin-bottom: 20rpx;
+  width: 624rpx;
+  height: 134rpx;
+  border-radius: 16rpx;
+  background: rgba(0, 0, 0, 0.15);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.verification .store .scanCode .scroll .scroll-view .info text {
+  font-family: NunitoSans-Regular;
+  font-size: 44rpx;
+}
+
+.verification .store .button {
+  position: fixed;
+  bottom: 60rpx;
+  width: 100%;
+}
+
+.verification .store .button button {
+  width: 622rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  background: #0fc1b5;
+  color: #fff;
+  line-height: 100rpx;
+}

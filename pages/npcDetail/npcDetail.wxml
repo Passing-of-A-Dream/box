@@ -1,0 +1,46 @@
+<head title="NPC详情" backShow="{{true}}" bgcolor="#252837"></head>
+<view class="npcDetail" style="padding-top:{{navHeight}}px;height:calc(100vh - {{navHeight}}px)">
+  <view class="scroll-Y">
+    <scroll-view class="scroll-view" scroll-y="{{true}}">
+      <view class="scroll-content">
+        <view class="npc">
+          <view class="avatar">
+            <image src="{{avatarUrl}}"></image>
+          </view>
+          <view class="words">
+            <view class="npc-title">不二酒吧</view>
+            <view class="npc-Location">成都市火车南站紫荆路23号</view>
+            <view class="npc-info">
+              <text>热度：1003</text>
+              <text>距离我：7km</text>
+            </view>
+          </view>
+        </view>
+        <view class="proposition" bindtap="goToProposition">
+          <view class="title">
+            <text>命题</text>
+            <text>累计参与人数：1023</text>
+          </view>
+          <view class="Detail">匹配3名朋友，喝一次酒，分
+            享自己的故事。</view>
+          <view class="award">
+            <text>奖励：百威啤酒一瓶</text>
+            <text>NPC验证</text>
+          </view>
+        </view>
+        <view class="introduce">
+          <view class="title">NPC介绍</view>
+          <view class="time">
+            <text>开门时间</text>
+            <view class="time-detail">10:00-22:00 (周六周日休息)</view>
+          </view>
+          <view class="Precautions">
+            <view>参与命题注意事项</view>
+            <text>自愿参与，请合理安排时间，提前与匹配成员沟通约定碰头时间，请勿在非NPC场景要求的地点碰头。
+            </text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

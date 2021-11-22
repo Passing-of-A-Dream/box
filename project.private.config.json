@@ -53,6 +53,34 @@
           "pathName": "pages/chat/chatdetail/chatdetail",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "NPC详情",
+          "pathName": "pages/npcDetail/npcDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "命题详情",
+          "pathName": "pages/propositionDetail/propositionDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "碰头",
+          "pathName": "pages/meet/meet",
+          "query": "",
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
+        },
+        {
+          "name": "验码",
+          "pathName": "pages/verification/verification",
+          "query": "",
+          "scene": null
         }
       ]
     }

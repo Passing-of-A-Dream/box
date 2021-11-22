@@ -1,4 +1,4 @@
-// app.js
+import request from './api/http'
 App({
   onLaunch() {
     this.globalData.navHeight = wx.getSystemInfoSync().statusBarHeight
@@ -6,18 +6,14 @@ App({
     wx.login({
       timeout: 10000,
       success: (res) => {
-        // console.log(res.code);
-        // wx.request({
-        //   url: '',
-        //   method: 'POST',
-        //   data: {
-        //     code: res.code,
-        //   }
-        // }).then(res=>{
-        //   // 根据返回信息判断用户是否首次登录
-        //   console.log(res);
-        // })
-      },
+        request({
+          url:`http://47.103.133.241:8080/demo/wx/auth/login_by_weixin/${res.code}`
+        }).then(res=>{
+          console.log(res.data);
+          wx.setStorageSync('token', res.data.token)
+          wx.setStorageSync('userId', res.data.userId)
+        })
+      }
     });
   },
   globalData: {

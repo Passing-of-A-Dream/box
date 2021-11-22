@@ -1,9 +1,9 @@
 <!-- 导航栏 -->
 <head backShow="{{true}}" BgColor="#252837"></head>
 <!-- 首次注册页面 -->
-<view class="loginIn" style="padding-top: {{navHeight}}px;height:100%">
+<view class="loginIn" style="padding-top: {{navHeight}}px;height:calc(100vh);">
 <view class="head">
-  <view class="avatar">
+  <view class="avatar" bindtap="upLoad">
     <view class="image">
       <image src="{{userInfo.avatarUrl}}" />
     </view>
@@ -32,7 +32,7 @@
 <view class="age">
   <view class="title">年龄</view>
   <view class="select">
-    <picker class="weui-picker" mode="date" value="{{date}}" fields="month" bindchange="bindDateChange">
+    <picker class="weui-picker" range="{{age}}" value="6" bindchange="bindDateChange">
       <view class="picker">{{date}}</view>
     </picker>
   </view>
@@ -44,6 +44,6 @@
   </view>
 </view>
 <view class="button">
-  <button>确定</button>
+  <button bindtap="btnReady">确定</button>
 </view>
 </view>
