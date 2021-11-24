@@ -11,7 +11,7 @@
       <text>会在哪里重逢呢？旅人</text>
     </view> -->
     <view class="button">
-      <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" bindtap="GoIndex">开启盒子宇宙</button>
+      <button bindtap="GoIndex">开启盒子宇宙</button>
     </view>
   </view>
 </view>

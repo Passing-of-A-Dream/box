@@ -80,7 +80,11 @@
           "name": "验码",
           "pathName": "pages/verification/verification",
           "query": "",
-          "scene": null
+          "scene": null,
+          "partialCompile": {
+            "enabled": true,
+            "pages": []
+          }
         }
       ]
     }

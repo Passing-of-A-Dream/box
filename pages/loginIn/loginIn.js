@@ -74,18 +74,30 @@ Page({
     let sex = this.data.sex
     let avatar = this.data.avatar
     if (date != "选择" && sex != '') {
-      userInfo({
-        age: date,
-        avatar: avatar,
-        gender: sex,
-        nickname: inputValue
-      }).then(res=>{
-        console.log(res);
+      // userInfo({
+      //   age: date,
+      //   avatar: avatar,
+      //   gender: sex,
+      //   nickname: inputValue
+      // }).then(res=>{
+      //   console.log(res);
+      //   wx.switchTab({
+      //     url: '../index/index',
+      //   })
+      // })
+      wx.switchTab({
+        url: '../index/index',
       })
     }
-    // wx.navigateTo({
-    //   url: '../index/index',
-    // })
+    const userInfo = {
+      avatarUrl: avatar,
+      sex: sex,
+      age: date,
+      nickname: inputValue,
+      city: '',
+      language: "zh_CN"
+    }
+    wx.setStorageSync('userInfo', userInfo)
   },
 
   /**
@@ -115,25 +127,4 @@ Page({
   onUnload: function () {
 
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })

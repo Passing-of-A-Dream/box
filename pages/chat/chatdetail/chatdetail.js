@@ -1,3 +1,4 @@
+import {GetUserSig} from '../../../api/api'
 const App = getApp()
 Page({
 
@@ -16,7 +17,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    GetUserSig().then(res=>{
+      console.log(res);
+    })
   },
 
   /**

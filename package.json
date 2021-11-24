@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "@vant/weapp": "^1.9.2"
+    "@vant/weapp": "^1.9.2",
+    "tim-upload-plugin": "^1.0.3",
+    "tim-wx-sdk": "^2.15.0"
   },
   "name": "box-crisis",
   "description": "盒子危机小程序前端代码",

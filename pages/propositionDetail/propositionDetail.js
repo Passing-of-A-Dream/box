@@ -7,7 +7,7 @@ Page({
   data: {
     navHeight: App.globalData.navHeight + 30 + 7, // 状态栏和导航栏高度
     avatarUrl: "https://thirdwx.qlogo.cn/mmopen/vi_32/0icg5wTP8ljPOJcI8S9qDBiaD7wvNmWhBnQ8AYIibHlHMJNezEk8qExZf5XMAsfXzibiceGqBtZekA4n04DRdmJ5rEQ/132",
-    buttonShow: 1,  // 按钮显示
+    buttonShow: 0,  // 按钮显示
   },
 
   /**
@@ -30,6 +30,12 @@ Page({
   goToBack() {
     wx.navigateBack({
       delta: 1
+    })
+  },
+  // 加入命题
+  joinPositin() {
+    this.setData({
+      buttonShow: 1
     })
   },
 

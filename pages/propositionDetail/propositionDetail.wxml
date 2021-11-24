@@ -63,7 +63,7 @@
           </view>
         </view>
         <view wx:if="{{buttonShow === 0}}" class="button">
-          <button button>加入</button>
+          <button bindtap="joinPositin">加入</button>
         </view>
         <view wx:if="{{buttonShow === 1}}" class="button2">
           <button bindtap="goToBack">放弃</button>

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goTo: 0, // 判断是否首次登录
+    goTo: 1, // 判断是否首次登录
     userInfo: {}, // 用户资料
     latitude: 0, // 经度
     longitude: 0, //纬度
@@ -36,7 +36,7 @@ Page({
     wx.getUserProfile({
       desc: '展示用户信息',
       success: (res) => {
-        console.log(res.userInfo);
+        // console.log(res.userInfo);
         this.setData({
           userInfo: res.userInfo
         })

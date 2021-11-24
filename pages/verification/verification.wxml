@@ -23,8 +23,8 @@
         <button bindtap="scanCode">点击开始扫码</button>
       </view>
       <view class="scroll">
-        <scroll-view scroll-y="{{true}}" class="scroll-view">
-          <view class="info" wx:for="{{4}}" wx:key="index">
+        <scroll-view scroll-y="{{scroll}}" class="scroll-view">
+          <view class="info" wx:for="{{num}}" wx:key="index">
             <text>2BIR-21NZ-6NB5-HU91</text>
           </view>
         </scroll-view>

@@ -23,9 +23,9 @@
     </view>
   </view>
   <!-- 消息列表 -->
-  <TUI-message-list></TUI-message-list>
+  <!-- <TUI-message-list></TUI-message-list> -->
   <!-- 消息输入框 -->
   <view class="message-input">
-    <TUI-message-input id="message-input" bind:sendMessage="sendMessage" bind:handleCall="handleCall"></TUI-message-input>
+    <!-- <TUI-message-input id="message-input" bind:sendMessage="sendMessage" bind:handleCall="handleCall"></TUI-message-input> -->
   </view>
 </view>

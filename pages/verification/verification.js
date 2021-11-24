@@ -10,12 +10,19 @@ Page({
     QRcode: "",   // 玩家出示的二维码
     buttonShow: true,  //  完成验码按钮显示
     identity: 'store',  // 身份
+    scroll: false,   // 滑动
+    num: 4
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if (this.data.num >= 5) {
+      this.setData({
+        scroll: true
+      })
+    }
     this.setData({
       QRcode: this.data.avatarUrl
     })
