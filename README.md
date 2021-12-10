@@ -1,4 +1,3 @@
-# box-crisis-mini-program-frontEnd
 
 #### 介绍
 盒子危机小程序前端代码
@@ -22,26 +21,3 @@ UI库使用vant UI实现，头部封装有自定义导航栏，底部封装有ta
 7.  腾讯云IM就自己看文档吧 附上链接 https://cloud.tencent.com/document/product/269/37413
 8.  微信API文档链接一起附上吧 https://developers.weixin.qq.com/miniprogram/dev/framework/
 9.  以及vant UI库的小程序版链接 https://vant-contrib.gitee.io/vant-weapp/#/home
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
