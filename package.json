@@ -5,7 +5,6 @@
     "tim-wx-sdk": "^2.15.0"
   },
   "name": "box-crisis",
-  "description": "盒子危机小程序前端代码",
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {},
@@ -14,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/box-crisis/mini-program-frontEnd.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC"

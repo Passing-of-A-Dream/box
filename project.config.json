@@ -48,7 +48,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.6",
-  "appid": "wx6957eca1fc456a3d",
+  "appid": "", // 配置你自己的appid
   "projectname": "BOX%20CRISIS",
   "debugOptions": {
     "hidedInDevtools": []
