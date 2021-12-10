@@ -1,8 +1,8 @@
 /*eslint-disable*/
 import LibGenerateTestUserSig from './lib-generate-test-usersig-es.min.js'
 
-const _SDKAPPID = 1400600041;
-const _SECRETKEY = 'd678d901063fef97460761e9a21af91dc62ffe53b5bb0446518c162916c5aecd';
+const _SDKAPPID = '你自己的appid（腾讯云IM控制台）'; 
+const _SECRETKEY = '';
 function genTestUserSig(userID) {
   /**
    * 腾讯云 SDKAppId，需要替换为您自己账号下的 SDKAppId。
