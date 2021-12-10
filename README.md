@@ -15,7 +15,7 @@ UI库使用vant UI实现，头部封装有自定义导航栏，底部封装有ta
 1.  克隆本仓库
 2.  在project.config.json里修改appid
 3.  修改含有地图页面的文件里map组件的subkey，个性化自定义地图样式
-4.  api设置在api文件夹内，可自定义修改
+4.  所有api以及request的配置都在api文件夹内，可自定义修改
 5.  聊天接入的腾讯云IM，在chat文件夹里修改样式即可，初始化在app.js里，登录在index.js里
 6.  #### 都有写注释，作者默认大家都看得懂
 7.  腾讯云IM控制台复制SDKAPPID 在utils文件夹GenerateTestUserSig.js内粘贴你自己的APPID即可
