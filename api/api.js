@@ -1,7 +1,7 @@
 import request from './http'
 const devurl = 'http://localhost:3000'
-const testurl = 'http://47.103.133.241:8080/demo'  // http
-const prdurl = 'http://47.103.133.241:8080/demo'   // https
+const testurl = ''  // http
+const prdurl = ''   // https
 const mapurl = 'https://apis.map.qq.com'  // 腾讯地图
 
 // 封装post方法

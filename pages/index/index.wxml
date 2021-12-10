@@ -15,7 +15,7 @@
   <!-- 背景图 -->
   <view class="background">
     <map class="map" id="map" enable-zoom="{{true}}" enable-scroll="{{true}}" bindcallouttap="callouttap"
-    markers="{{markers}}" bindmarkertap="markertap" bindlabeltap="markertap" subkey="32CBZ-5E53U-NENVO-BRGRQ-WHS5V-R2FJA" show-location="{{true}}" scale="16" min-scale="14" max-scale="18" latitude="{{latitude}}" longitude="{{longitude}}">
+    markers="{{markers}}" bindmarkertap="markertap" bindlabeltap="markertap" subkey="{{腾讯地图api的key}}" show-location="{{true}}" scale="16" min-scale="14" max-scale="18" latitude="{{latitude}}" longitude="{{longitude}}">
       <cover-view slot="callout">
         <block wx:for="{{customCalloutMarkerIds}}" wx:key="*this">
           <cover-view class="customCallout" marker-id="{{item}}">

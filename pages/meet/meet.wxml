@@ -1,6 +1,6 @@
 <head title="碰头" backShow="{{true}}"></head>
 <view class="meet">
-  <map enable-zoom="{{false}}" enable-scroll="{{false}}" bindcallouttap="callouttap" class="map" subkey="32CBZ-5E53U-NENVO-BRGRQ-WHS5V-R2FJA" scale="16" min-scale="16" max-scale="16" latitude="{{latitude}}" longitude="{{longitude}}">
+  <map enable-zoom="{{false}}" enable-scroll="{{false}}" bindcallouttap="callouttap" class="map" subkey="{{腾讯地图api的key}}" scale="16" min-scale="16" max-scale="16" latitude="{{latitude}}" longitude="{{longitude}}">
     <view class="cover-view" style="padding-top: {{navHeight}}px;height: calc(100vh - {{navHeight}}px);">
       <view class="content">
         <view class="state"><text wx:if="{{wordShow}}">待发起碰头</text>
